@@ -1,0 +1,77 @@
+[
+  {
+    "file": "test_images/class_car.jpg",
+    "expected": null,
+    "predicted": "glass",
+    "confidence": 0.984,
+    "correct": null,
+    "all_probabilities": {
+      "glass": 0.984,
+      "plastic": 0.012,
+      "metal": 0.0025,
+      "organic": 0.0012,
+      "battery": 0.0003,
+      "paper": 0.0
+    }
+  },
+  {
+    "file": "test_images/class_favicon.jpeg",
+    "expected": null,
+    "predicted": "paper",
+    "confidence": 0.4815,
+    "correct": null,
+    "all_probabilities": {
+      "paper": 0.4815,
+      "metal": 0.3056,
+      "battery": 0.1385,
+      "plastic": 0.0652,
+      "glass": 0.0059,
+      "organic": 0.0034
+    }
+  },
+  {
+    "file": "test_images/class_pihu.png",
+    "expected": null,
+    "predicted": "organic",
+    "confidence": 0.637,
+    "correct": null,
+    "all_probabilities": {
+      "organic": 0.637,
+      "battery": 0.182,
+      "plastic": 0.1717,
+      "metal": 0.0065,
+      "glass": 0.0023,
+      "paper": 0.0004
+    }
+  },
+  {
+    "file": "test_images/class_plush.png",
+    "expected": null,
+    "predicted": "organic",
+    "confidence": 0.9772,
+    "correct": null,
+    "all_probabilities": {
+      "organic": 0.9772,
+      "battery": 0.0222,
+      "metal": 0.0006,
+      "plastic": 0.0,
+      "glass": 0.0,
+      "paper": 0.0
+    }
+  },
+  {
+    "file": "test_images/class_sshot.png",
+    "expected": null,
+    "predicted": "battery",
+    "confidence": 0.7898,
+    "correct": null,
+    "all_probabilities": {
+      "battery": 0.7898,
+      "glass": 0.1251,
+      "plastic": 0.0466,
+      "paper": 0.0347,
+      "organic": 0.0025,
+      "metal": 0.0014
+    }
+  }
+]

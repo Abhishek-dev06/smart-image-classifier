@@ -1,0 +1,1587 @@
+{
+  "total_failures": 225,
+  "featured_failure": {
+    "source": "test",
+    "file": "dataset/test/organic/biological123.jpg",
+    "actual": "organic",
+    "predicted": "paper",
+    "confidence": 0.9817
+  },
+  "all_failures": [
+    {
+      "source": "test",
+      "file": "dataset/test/organic/biological123.jpg",
+      "actual": "organic",
+      "predicted": "paper",
+      "confidence": 0.9817
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/organic/biological60.jpg",
+      "actual": "organic",
+      "predicted": "paper",
+      "confidence": 0.9782
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal481.jpg",
+      "actual": "metal",
+      "predicted": "organic",
+      "confidence": 0.9596
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass735.jpg",
+      "actual": "glass",
+      "predicted": "battery",
+      "confidence": 0.9536
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/organic/biological664.jpg",
+      "actual": "organic",
+      "predicted": "battery",
+      "confidence": 0.9336
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass551.jpg",
+      "actual": "glass",
+      "predicted": "battery",
+      "confidence": 0.9243
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/organic/biological322.jpg",
+      "actual": "organic",
+      "predicted": "paper",
+      "confidence": 0.9018
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/battery/battery104.jpg",
+      "actual": "battery",
+      "predicted": "paper",
+      "confidence": 0.8966
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/battery/battery742.jpg",
+      "actual": "battery",
+      "predicted": "plastic",
+      "confidence": 0.8876
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal79.jpg",
+      "actual": "metal",
+      "predicted": "organic",
+      "confidence": 0.8791
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic457.jpg",
+      "actual": "plastic",
+      "predicted": "paper",
+      "confidence": 0.8704
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/organic/biological375.jpg",
+      "actual": "organic",
+      "predicted": "paper",
+      "confidence": 0.8509
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal469.jpg",
+      "actual": "metal",
+      "predicted": "organic",
+      "confidence": 0.8372
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic728.jpg",
+      "actual": "plastic",
+      "predicted": "glass",
+      "confidence": 0.837
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/battery/battery163.jpg",
+      "actual": "battery",
+      "predicted": "paper",
+      "confidence": 0.8336
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic451.jpg",
+      "actual": "plastic",
+      "predicted": "paper",
+      "confidence": 0.8299
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/paper/paper696.jpg",
+      "actual": "paper",
+      "predicted": "battery",
+      "confidence": 0.8286
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/organic/biological374.jpg",
+      "actual": "organic",
+      "predicted": "paper",
+      "confidence": 0.8248
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic696.jpg",
+      "actual": "plastic",
+      "predicted": "glass",
+      "confidence": 0.8177
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass185.jpg",
+      "actual": "glass",
+      "predicted": "plastic",
+      "confidence": 0.8167
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass748.jpg",
+      "actual": "glass",
+      "predicted": "organic",
+      "confidence": 0.8138
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass179.jpg",
+      "actual": "glass",
+      "predicted": "plastic",
+      "confidence": 0.8079
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass736.jpg",
+      "actual": "glass",
+      "predicted": "paper",
+      "confidence": 0.8039
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal302.jpg",
+      "actual": "metal",
+      "predicted": "paper",
+      "confidence": 0.7874
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass321.jpg",
+      "actual": "glass",
+      "predicted": "paper",
+      "confidence": 0.7755
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/battery/battery94.jpg",
+      "actual": "battery",
+      "predicted": "organic",
+      "confidence": 0.7737
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/battery/battery654.jpg",
+      "actual": "battery",
+      "predicted": "metal",
+      "confidence": 0.7732
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal35.jpg",
+      "actual": "metal",
+      "predicted": "organic",
+      "confidence": 0.772
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/battery/battery760.jpg",
+      "actual": "battery",
+      "predicted": "plastic",
+      "confidence": 0.7532
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass330.jpg",
+      "actual": "glass",
+      "predicted": "paper",
+      "confidence": 0.7472
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/battery/battery448.jpg",
+      "actual": "battery",
+      "predicted": "paper",
+      "confidence": 0.747
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic396.jpg",
+      "actual": "plastic",
+      "predicted": "paper",
+      "confidence": 0.7424
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/organic/biological658.jpg",
+      "actual": "organic",
+      "predicted": "paper",
+      "confidence": 0.7379
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal484.jpg",
+      "actual": "metal",
+      "predicted": "plastic",
+      "confidence": 0.7376
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/battery/battery39.jpg",
+      "actual": "battery",
+      "predicted": "glass",
+      "confidence": 0.7357
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/battery/battery522.jpg",
+      "actual": "battery",
+      "predicted": "metal",
+      "confidence": 0.7333
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic352.jpg",
+      "actual": "plastic",
+      "predicted": "metal",
+      "confidence": 0.7329
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic767.jpg",
+      "actual": "plastic",
+      "predicted": "metal",
+      "confidence": 0.7117
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass661.jpg",
+      "actual": "glass",
+      "predicted": "paper",
+      "confidence": 0.7031
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic133.jpg",
+      "actual": "plastic",
+      "predicted": "organic",
+      "confidence": 0.6865
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass27.jpg",
+      "actual": "glass",
+      "predicted": "paper",
+      "confidence": 0.6859
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass431.jpg",
+      "actual": "glass",
+      "predicted": "metal",
+      "confidence": 0.6853
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic371.jpg",
+      "actual": "plastic",
+      "predicted": "metal",
+      "confidence": 0.679
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass593.jpg",
+      "actual": "glass",
+      "predicted": "battery",
+      "confidence": 0.6674
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic499.jpg",
+      "actual": "plastic",
+      "predicted": "glass",
+      "confidence": 0.6665
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/battery/battery45.jpg",
+      "actual": "battery",
+      "predicted": "plastic",
+      "confidence": 0.6553
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal387.jpg",
+      "actual": "metal",
+      "predicted": "paper",
+      "confidence": 0.653
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic416.jpg",
+      "actual": "plastic",
+      "predicted": "glass",
+      "confidence": 0.6523
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass369.jpg",
+      "actual": "glass",
+      "predicted": "battery",
+      "confidence": 0.6517
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass299.jpg",
+      "actual": "glass",
+      "predicted": "plastic",
+      "confidence": 0.6474
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass323.jpg",
+      "actual": "glass",
+      "predicted": "plastic",
+      "confidence": 0.6438
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic145.jpg",
+      "actual": "plastic",
+      "predicted": "paper",
+      "confidence": 0.6401
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass295.jpg",
+      "actual": "glass",
+      "predicted": "metal",
+      "confidence": 0.6356
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass500.jpg",
+      "actual": "glass",
+      "predicted": "plastic",
+      "confidence": 0.6347
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass372.jpg",
+      "actual": "glass",
+      "predicted": "battery",
+      "confidence": 0.6328
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/organic/biological84.jpg",
+      "actual": "organic",
+      "predicted": "paper",
+      "confidence": 0.6267
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/organic/biological627.jpg",
+      "actual": "organic",
+      "predicted": "paper",
+      "confidence": 0.626
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic54.jpg",
+      "actual": "plastic",
+      "predicted": "paper",
+      "confidence": 0.6172
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass491.jpg",
+      "actual": "glass",
+      "predicted": "metal",
+      "confidence": 0.6125
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/organic/biological383.jpg",
+      "actual": "organic",
+      "predicted": "metal",
+      "confidence": 0.6097
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass215.jpg",
+      "actual": "glass",
+      "predicted": "plastic",
+      "confidence": 0.6079
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass357.jpg",
+      "actual": "glass",
+      "predicted": "paper",
+      "confidence": 0.6071
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic152.jpg",
+      "actual": "plastic",
+      "predicted": "glass",
+      "confidence": 0.6058
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass610.jpg",
+      "actual": "glass",
+      "predicted": "metal",
+      "confidence": 0.6044
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/organic/biological391.jpg",
+      "actual": "organic",
+      "predicted": "glass",
+      "confidence": 0.6015
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass773.jpg",
+      "actual": "glass",
+      "predicted": "paper",
+      "confidence": 0.5993
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass695.jpg",
+      "actual": "glass",
+      "predicted": "metal",
+      "confidence": 0.5981
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal517.jpg",
+      "actual": "metal",
+      "predicted": "battery",
+      "confidence": 0.5975
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal177.jpg",
+      "actual": "metal",
+      "predicted": "glass",
+      "confidence": 0.5966
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/paper/paper538.jpg",
+      "actual": "paper",
+      "predicted": "glass",
+      "confidence": 0.596
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal98.jpg",
+      "actual": "metal",
+      "predicted": "paper",
+      "confidence": 0.5952
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/organic/biological306.jpg",
+      "actual": "organic",
+      "predicted": "paper",
+      "confidence": 0.5931
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass178.jpg",
+      "actual": "glass",
+      "predicted": "metal",
+      "confidence": 0.5896
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/organic/biological55.jpg",
+      "actual": "organic",
+      "predicted": "paper",
+      "confidence": 0.5837
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic557.jpg",
+      "actual": "plastic",
+      "predicted": "metal",
+      "confidence": 0.5815
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal413.jpg",
+      "actual": "metal",
+      "predicted": "paper",
+      "confidence": 0.5748
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal89.jpg",
+      "actual": "metal",
+      "predicted": "battery",
+      "confidence": 0.5719
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass267.jpg",
+      "actual": "glass",
+      "predicted": "plastic",
+      "confidence": 0.5697
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal44.jpg",
+      "actual": "metal",
+      "predicted": "paper",
+      "confidence": 0.564
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic130.jpg",
+      "actual": "plastic",
+      "predicted": "paper",
+      "confidence": 0.5571
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass746.jpg",
+      "actual": "glass",
+      "predicted": "metal",
+      "confidence": 0.5548
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic404.jpg",
+      "actual": "plastic",
+      "predicted": "glass",
+      "confidence": 0.5541
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/battery/battery140.jpg",
+      "actual": "battery",
+      "predicted": "metal",
+      "confidence": 0.5499
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass416.jpg",
+      "actual": "glass",
+      "predicted": "metal",
+      "confidence": 0.549
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/paper/paper706.jpg",
+      "actual": "paper",
+      "predicted": "plastic",
+      "confidence": 0.547
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/battery/battery728.jpg",
+      "actual": "battery",
+      "predicted": "metal",
+      "confidence": 0.5456
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic665.jpg",
+      "actual": "plastic",
+      "predicted": "organic",
+      "confidence": 0.5438
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal294.jpg",
+      "actual": "metal",
+      "predicted": "paper",
+      "confidence": 0.5436
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic6.jpg",
+      "actual": "plastic",
+      "predicted": "paper",
+      "confidence": 0.5436
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/organic/biological505.jpg",
+      "actual": "organic",
+      "predicted": "paper",
+      "confidence": 0.5427
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal197.jpg",
+      "actual": "metal",
+      "predicted": "paper",
+      "confidence": 0.5425
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/battery/battery766.jpg",
+      "actual": "battery",
+      "predicted": "organic",
+      "confidence": 0.5422
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal446.jpg",
+      "actual": "metal",
+      "predicted": "glass",
+      "confidence": 0.5418
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass125.jpg",
+      "actual": "glass",
+      "predicted": "paper",
+      "confidence": 0.5415
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/organic/biological550.jpg",
+      "actual": "organic",
+      "predicted": "paper",
+      "confidence": 0.5404
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal763.jpg",
+      "actual": "metal",
+      "predicted": "glass",
+      "confidence": 0.5396
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass356.jpg",
+      "actual": "glass",
+      "predicted": "battery",
+      "confidence": 0.5335
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic585.jpg",
+      "actual": "plastic",
+      "predicted": "glass",
+      "confidence": 0.5333
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/organic/biological701.jpg",
+      "actual": "organic",
+      "predicted": "paper",
+      "confidence": 0.5309
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal383.jpg",
+      "actual": "metal",
+      "predicted": "organic",
+      "confidence": 0.5268
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass403.jpg",
+      "actual": "glass",
+      "predicted": "battery",
+      "confidence": 0.5255
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass591.jpg",
+      "actual": "glass",
+      "predicted": "metal",
+      "confidence": 0.5243
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic546.jpg",
+      "actual": "plastic",
+      "predicted": "paper",
+      "confidence": 0.5238
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/battery/battery242.jpg",
+      "actual": "battery",
+      "predicted": "metal",
+      "confidence": 0.5202
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic553.jpg",
+      "actual": "plastic",
+      "predicted": "metal",
+      "confidence": 0.5162
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass449.jpg",
+      "actual": "glass",
+      "predicted": "metal",
+      "confidence": 0.5151
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic325.jpg",
+      "actual": "plastic",
+      "predicted": "metal",
+      "confidence": 0.5133
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic591.jpg",
+      "actual": "plastic",
+      "predicted": "glass",
+      "confidence": 0.5104
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal127.jpg",
+      "actual": "metal",
+      "predicted": "paper",
+      "confidence": 0.5075
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/organic/biological768.jpg",
+      "actual": "organic",
+      "predicted": "paper",
+      "confidence": 0.5053
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/battery/battery16.jpg",
+      "actual": "battery",
+      "predicted": "organic",
+      "confidence": 0.5047
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal506.jpg",
+      "actual": "metal",
+      "predicted": "paper",
+      "confidence": 0.5019
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic211.jpg",
+      "actual": "plastic",
+      "predicted": "metal",
+      "confidence": 0.5011
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass423.jpg",
+      "actual": "glass",
+      "predicted": "battery",
+      "confidence": 0.5004
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal465.jpg",
+      "actual": "metal",
+      "predicted": "paper",
+      "confidence": 0.4988
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass531.jpg",
+      "actual": "glass",
+      "predicted": "metal",
+      "confidence": 0.496
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic348.jpg",
+      "actual": "plastic",
+      "predicted": "metal",
+      "confidence": 0.4955
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal425.jpg",
+      "actual": "metal",
+      "predicted": "paper",
+      "confidence": 0.494
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic735.jpg",
+      "actual": "plastic",
+      "predicted": "glass",
+      "confidence": 0.4936
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic82.jpg",
+      "actual": "plastic",
+      "predicted": "paper",
+      "confidence": 0.4915
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal170.jpg",
+      "actual": "metal",
+      "predicted": "paper",
+      "confidence": 0.4886
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/organic/biological417.jpg",
+      "actual": "organic",
+      "predicted": "metal",
+      "confidence": 0.4865
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/battery/battery257.jpg",
+      "actual": "battery",
+      "predicted": "metal",
+      "confidence": 0.4859
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal183.jpg",
+      "actual": "metal",
+      "predicted": "glass",
+      "confidence": 0.4843
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/paper/paper736.jpg",
+      "actual": "paper",
+      "predicted": "plastic",
+      "confidence": 0.4841
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal254.jpg",
+      "actual": "metal",
+      "predicted": "paper",
+      "confidence": 0.4833
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal63.jpg",
+      "actual": "metal",
+      "predicted": "paper",
+      "confidence": 0.4832
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic429.jpg",
+      "actual": "plastic",
+      "predicted": "paper",
+      "confidence": 0.4832
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass149.jpg",
+      "actual": "glass",
+      "predicted": "paper",
+      "confidence": 0.4826
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/battery/battery304.jpg",
+      "actual": "battery",
+      "predicted": "metal",
+      "confidence": 0.4799
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass111.jpg",
+      "actual": "glass",
+      "predicted": "paper",
+      "confidence": 0.4757
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/organic/biological743.jpg",
+      "actual": "organic",
+      "predicted": "paper",
+      "confidence": 0.4743
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic452.jpg",
+      "actual": "plastic",
+      "predicted": "paper",
+      "confidence": 0.4738
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal244.jpg",
+      "actual": "metal",
+      "predicted": "paper",
+      "confidence": 0.473
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/organic/biological399.jpg",
+      "actual": "organic",
+      "predicted": "metal",
+      "confidence": 0.4725
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic150.jpg",
+      "actual": "plastic",
+      "predicted": "paper",
+      "confidence": 0.4707
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic622.jpg",
+      "actual": "plastic",
+      "predicted": "glass",
+      "confidence": 0.4701
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass50.jpg",
+      "actual": "glass",
+      "predicted": "metal",
+      "confidence": 0.4697
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass715.jpg",
+      "actual": "glass",
+      "predicted": "organic",
+      "confidence": 0.4689
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic692.jpg",
+      "actual": "plastic",
+      "predicted": "metal",
+      "confidence": 0.4677
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass667.jpg",
+      "actual": "glass",
+      "predicted": "metal",
+      "confidence": 0.4639
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic246.jpg",
+      "actual": "plastic",
+      "predicted": "metal",
+      "confidence": 0.4636
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic463.jpg",
+      "actual": "plastic",
+      "predicted": "paper",
+      "confidence": 0.463
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic138.jpg",
+      "actual": "plastic",
+      "predicted": "paper",
+      "confidence": 0.461
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass36.jpg",
+      "actual": "glass",
+      "predicted": "paper",
+      "confidence": 0.4603
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/battery/battery565.jpg",
+      "actual": "battery",
+      "predicted": "organic",
+      "confidence": 0.4597
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass390.jpg",
+      "actual": "glass",
+      "predicted": "paper",
+      "confidence": 0.459
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic740.jpg",
+      "actual": "plastic",
+      "predicted": "glass",
+      "confidence": 0.4589
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass583.jpg",
+      "actual": "glass",
+      "predicted": "plastic",
+      "confidence": 0.4576
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/battery/battery150.jpg",
+      "actual": "battery",
+      "predicted": "metal",
+      "confidence": 0.4552
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal571.jpg",
+      "actual": "metal",
+      "predicted": "battery",
+      "confidence": 0.455
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass642.jpg",
+      "actual": "glass",
+      "predicted": "organic",
+      "confidence": 0.4546
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass55.jpg",
+      "actual": "glass",
+      "predicted": "metal",
+      "confidence": 0.4545
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic479.jpg",
+      "actual": "plastic",
+      "predicted": "glass",
+      "confidence": 0.4529
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic645.jpg",
+      "actual": "plastic",
+      "predicted": "metal",
+      "confidence": 0.4523
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass24.jpg",
+      "actual": "glass",
+      "predicted": "plastic",
+      "confidence": 0.4519
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic486.jpg",
+      "actual": "plastic",
+      "predicted": "metal",
+      "confidence": 0.4498
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal9.jpg",
+      "actual": "metal",
+      "predicted": "paper",
+      "confidence": 0.4478
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal116.jpg",
+      "actual": "metal",
+      "predicted": "paper",
+      "confidence": 0.4465
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic83.jpg",
+      "actual": "plastic",
+      "predicted": "metal",
+      "confidence": 0.4377
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal174.jpg",
+      "actual": "metal",
+      "predicted": "paper",
+      "confidence": 0.4367
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass264.jpg",
+      "actual": "glass",
+      "predicted": "battery",
+      "confidence": 0.4313
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic225.jpg",
+      "actual": "plastic",
+      "predicted": "paper",
+      "confidence": 0.4274
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass8.jpg",
+      "actual": "glass",
+      "predicted": "paper",
+      "confidence": 0.4259
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic116.jpg",
+      "actual": "plastic",
+      "predicted": "metal",
+      "confidence": 0.4259
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/battery/battery80.jpg",
+      "actual": "battery",
+      "predicted": "organic",
+      "confidence": 0.4242
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass751.jpg",
+      "actual": "glass",
+      "predicted": "plastic",
+      "confidence": 0.4222
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/paper/paper641.jpg",
+      "actual": "paper",
+      "predicted": "metal",
+      "confidence": 0.419
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic680.jpg",
+      "actual": "plastic",
+      "predicted": "metal",
+      "confidence": 0.4182
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic541.jpg",
+      "actual": "plastic",
+      "predicted": "metal",
+      "confidence": 0.4171
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass528.jpg",
+      "actual": "glass",
+      "predicted": "paper",
+      "confidence": 0.4162
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic320.jpg",
+      "actual": "plastic",
+      "predicted": "paper",
+      "confidence": 0.4132
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass517.jpg",
+      "actual": "glass",
+      "predicted": "battery",
+      "confidence": 0.4124
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass624.jpg",
+      "actual": "glass",
+      "predicted": "battery",
+      "confidence": 0.4122
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic23.jpg",
+      "actual": "plastic",
+      "predicted": "paper",
+      "confidence": 0.4068
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic668.jpg",
+      "actual": "plastic",
+      "predicted": "paper",
+      "confidence": 0.4032
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal360.jpg",
+      "actual": "metal",
+      "predicted": "battery",
+      "confidence": 0.4025
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal84.jpg",
+      "actual": "metal",
+      "predicted": "paper",
+      "confidence": 0.4017
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic124.jpg",
+      "actual": "plastic",
+      "predicted": "paper",
+      "confidence": 0.3968
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic619.jpg",
+      "actual": "plastic",
+      "predicted": "paper",
+      "confidence": 0.3968
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal501.jpg",
+      "actual": "metal",
+      "predicted": "plastic",
+      "confidence": 0.3964
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal585.jpg",
+      "actual": "metal",
+      "predicted": "paper",
+      "confidence": 0.3943
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/paper/paper606.jpg",
+      "actual": "paper",
+      "predicted": "plastic",
+      "confidence": 0.3938
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal165.jpg",
+      "actual": "metal",
+      "predicted": "paper",
+      "confidence": 0.3903
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal69.jpg",
+      "actual": "metal",
+      "predicted": "plastic",
+      "confidence": 0.3896
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/battery/battery123.jpg",
+      "actual": "battery",
+      "predicted": "plastic",
+      "confidence": 0.3871
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal17.jpg",
+      "actual": "metal",
+      "predicted": "glass",
+      "confidence": 0.3858
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/battery/battery18.jpg",
+      "actual": "battery",
+      "predicted": "plastic",
+      "confidence": 0.3824
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic534.jpg",
+      "actual": "plastic",
+      "predicted": "glass",
+      "confidence": 0.3808
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic492.jpg",
+      "actual": "plastic",
+      "predicted": "paper",
+      "confidence": 0.3799
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass606.jpg",
+      "actual": "glass",
+      "predicted": "metal",
+      "confidence": 0.3763
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass576.jpg",
+      "actual": "glass",
+      "predicted": "metal",
+      "confidence": 0.3761
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal15.jpg",
+      "actual": "metal",
+      "predicted": "paper",
+      "confidence": 0.3757
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic155.jpg",
+      "actual": "plastic",
+      "predicted": "glass",
+      "confidence": 0.3722
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic559.jpg",
+      "actual": "plastic",
+      "predicted": "paper",
+      "confidence": 0.3717
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass108.jpg",
+      "actual": "glass",
+      "predicted": "metal",
+      "confidence": 0.3649
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal495.jpg",
+      "actual": "metal",
+      "predicted": "paper",
+      "confidence": 0.3631
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic117.jpg",
+      "actual": "plastic",
+      "predicted": "paper",
+      "confidence": 0.3626
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/paper/paper594.jpg",
+      "actual": "paper",
+      "predicted": "glass",
+      "confidence": 0.3598
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal622.jpg",
+      "actual": "metal",
+      "predicted": "paper",
+      "confidence": 0.3525
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/organic/biological128.jpg",
+      "actual": "organic",
+      "predicted": "paper",
+      "confidence": 0.3524
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic720.jpg",
+      "actual": "plastic",
+      "predicted": "metal",
+      "confidence": 0.3518
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/paper/paper417.jpg",
+      "actual": "paper",
+      "predicted": "plastic",
+      "confidence": 0.3505
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/paper/paper683.jpg",
+      "actual": "paper",
+      "predicted": "metal",
+      "confidence": 0.3499
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic618.jpg",
+      "actual": "plastic",
+      "predicted": "battery",
+      "confidence": 0.3486
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal203.jpg",
+      "actual": "metal",
+      "predicted": "paper",
+      "confidence": 0.3469
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal225.jpg",
+      "actual": "metal",
+      "predicted": "organic",
+      "confidence": 0.3443
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass65.jpg",
+      "actual": "glass",
+      "predicted": "metal",
+      "confidence": 0.339
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/organic/biological228.jpg",
+      "actual": "organic",
+      "predicted": "battery",
+      "confidence": 0.3376
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic670.jpg",
+      "actual": "plastic",
+      "predicted": "metal",
+      "confidence": 0.3346
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal57.jpg",
+      "actual": "metal",
+      "predicted": "plastic",
+      "confidence": 0.332
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal709.jpg",
+      "actual": "metal",
+      "predicted": "plastic",
+      "confidence": 0.33
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass114.jpg",
+      "actual": "glass",
+      "predicted": "metal",
+      "confidence": 0.3276
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic562.jpg",
+      "actual": "plastic",
+      "predicted": "organic",
+      "confidence": 0.3246
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/metal/metal472.jpg",
+      "actual": "metal",
+      "predicted": "paper",
+      "confidence": 0.3234
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/paper/paper645.jpg",
+      "actual": "paper",
+      "predicted": "glass",
+      "confidence": 0.3222
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/paper/paper283.jpg",
+      "actual": "paper",
+      "predicted": "metal",
+      "confidence": 0.315
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/paper/paper647.jpg",
+      "actual": "paper",
+      "predicted": "metal",
+      "confidence": 0.3117
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/organic/biological351.jpg",
+      "actual": "organic",
+      "predicted": "metal",
+      "confidence": 0.3036
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/glass/glass78.jpg",
+      "actual": "glass",
+      "predicted": "metal",
+      "confidence": 0.2998
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/paper/paper469.jpg",
+      "actual": "paper",
+      "predicted": "metal",
+      "confidence": 0.2992
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic773.jpg",
+      "actual": "plastic",
+      "predicted": "organic",
+      "confidence": 0.2969
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/battery/battery193.jpg",
+      "actual": "battery",
+      "predicted": "plastic",
+      "confidence": 0.2967
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/plastic/plastic297.jpg",
+      "actual": "plastic",
+      "predicted": "metal",
+      "confidence": 0.2709
+    },
+    {
+      "source": "test",
+      "file": "dataset/test/paper/paper167.jpg",
+      "actual": "paper",
+      "predicted": "metal",
+      "confidence": 0.2549
+    }
+  ]
+}
