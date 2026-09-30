@@ -1,0 +1,40 @@
+{
+  "total_images": 4650,
+  "num_classes": 6,
+  "class_counts": {
+    "battery": 775,
+    "glass": 775,
+    "metal": 775,
+    "organic": 775,
+    "paper": 775,
+    "plastic": 775
+  },
+  "imbalance_ratio": 1.0,
+  "verdict": "The dataset is fairly balanced.",
+  "splits": {
+    "train": {
+      "battery": 542,
+      "glass": 542,
+      "metal": 542,
+      "organic": 542,
+      "paper": 542,
+      "plastic": 542
+    },
+    "validation": {
+      "battery": 116,
+      "glass": 116,
+      "metal": 116,
+      "organic": 116,
+      "paper": 116,
+      "plastic": 116
+    },
+    "test": {
+      "battery": 117,
+      "glass": 117,
+      "metal": 117,
+      "organic": 117,
+      "paper": 117,
+      "plastic": 117
+    }
+  }
+}
