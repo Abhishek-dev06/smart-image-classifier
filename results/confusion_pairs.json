@@ -1,0 +1,32 @@
+[
+  {
+    "actual": "metal",
+    "predicted": "paper",
+    "count": 26,
+    "percent_of_actual_class": 22.2
+  },
+  {
+    "actual": "plastic",
+    "predicted": "paper",
+    "count": 23,
+    "percent_of_actual_class": 19.7
+  },
+  {
+    "actual": "glass",
+    "predicted": "metal",
+    "count": 20,
+    "percent_of_actual_class": 17.1
+  },
+  {
+    "actual": "plastic",
+    "predicted": "metal",
+    "count": 19,
+    "percent_of_actual_class": 16.2
+  },
+  {
+    "actual": "organic",
+    "predicted": "paper",
+    "count": 16,
+    "percent_of_actual_class": 13.7
+  }
+]
