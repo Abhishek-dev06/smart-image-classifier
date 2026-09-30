@@ -16,6 +16,8 @@ TRAIN_DIR = DATASET_DIR / "train"
 VAL_DIR = DATASET_DIR / "validation"
 TEST_DIR = DATASET_DIR / "test"
 MODELS_DIR = PROJECT_ROOT / "models"
+MODEL_PATH = MODELS_DIR / "image_classifier.keras"
+CLASS_NAMES_PATH = MODELS_DIR / "class_names.json"
 RESULTS_DIR = PROJECT_ROOT / "results"
 TEST_IMAGES_DIR = PROJECT_ROOT / "test_images"
 
