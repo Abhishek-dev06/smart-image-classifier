@@ -1,0 +1,48 @@
+{
+  "num_test_images": 702,
+  "test_loss": 0.7829,
+  "test_accuracy": 0.6795,
+  "macro_precision": 0.6975,
+  "macro_recall": 0.6795,
+  "macro_f1": 0.676,
+  "weighted_f1": 0.676,
+  "weakest_class_by_f1": "plastic",
+  "per_class": {
+    "battery": {
+      "precision": 0.8319,
+      "recall": 0.8034,
+      "f1": 0.8174,
+      "support": 117
+    },
+    "glass": {
+      "precision": 0.7108,
+      "recall": 0.5043,
+      "f1": 0.59,
+      "support": 117
+    },
+    "metal": {
+      "precision": 0.5547,
+      "recall": 0.6068,
+      "f1": 0.5796,
+      "support": 117
+    },
+    "organic": {
+      "precision": 0.8393,
+      "recall": 0.8034,
+      "f1": 0.821,
+      "support": 117
+    },
+    "paper": {
+      "precision": 0.5568,
+      "recall": 0.8803,
+      "f1": 0.6821,
+      "support": 117
+    },
+    "plastic": {
+      "precision": 0.6914,
+      "recall": 0.4786,
+      "f1": 0.5657,
+      "support": 117
+    }
+  }
+}

@@ -1,0 +1,4916 @@
+[
+  {
+    "file": "dataset/test/battery/battery104.jpg",
+    "actual": "battery",
+    "predicted": "paper",
+    "confidence": 0.8966,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/battery/battery121.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9463,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery123.jpg",
+    "actual": "battery",
+    "predicted": "plastic",
+    "confidence": 0.3871,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/battery/battery126.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.8495,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery128.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.6266,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery139.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9995,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery140.jpg",
+    "actual": "battery",
+    "predicted": "metal",
+    "confidence": 0.5499,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/battery/battery150.jpg",
+    "actual": "battery",
+    "predicted": "metal",
+    "confidence": 0.4552,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/battery/battery16.jpg",
+    "actual": "battery",
+    "predicted": "organic",
+    "confidence": 0.5047,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/battery/battery163.jpg",
+    "actual": "battery",
+    "predicted": "paper",
+    "confidence": 0.8336,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/battery/battery165.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9986,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery171.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9978,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery172.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9744,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery18.jpg",
+    "actual": "battery",
+    "predicted": "plastic",
+    "confidence": 0.3824,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/battery/battery184.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9968,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery185.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.6378,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery189.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9934,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery192.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.893,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery193.jpg",
+    "actual": "battery",
+    "predicted": "plastic",
+    "confidence": 0.2967,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/battery/battery201.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9189,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery213.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.99,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery227.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.549,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery230.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.424,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery242.jpg",
+    "actual": "battery",
+    "predicted": "metal",
+    "confidence": 0.5202,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/battery/battery246.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9866,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery249.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9958,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery25.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9993,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery257.jpg",
+    "actual": "battery",
+    "predicted": "metal",
+    "confidence": 0.4859,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/battery/battery276.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9993,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery282.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9965,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery292.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9997,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery294.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9935,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery295.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9987,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery298.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9967,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery30.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.4651,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery300.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9991,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery301.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9958,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery304.jpg",
+    "actual": "battery",
+    "predicted": "metal",
+    "confidence": 0.4799,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/battery/battery309.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.8692,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery31.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.6874,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery313.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9988,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery324.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9803,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery342.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9971,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery343.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9967,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery345.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9942,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery346.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9871,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery348.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9923,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery352.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9904,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery355.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9986,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery366.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9676,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery37.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.6845,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery39.jpg",
+    "actual": "battery",
+    "predicted": "glass",
+    "confidence": 0.7357,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/battery/battery390.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9965,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery399.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.958,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery409.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9766,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery412.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.8124,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery416.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9848,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery426.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9938,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery43.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.4626,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery432.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9954,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery435.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9988,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery440.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9986,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery448.jpg",
+    "actual": "battery",
+    "predicted": "paper",
+    "confidence": 0.747,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/battery/battery449.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9987,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery45.jpg",
+    "actual": "battery",
+    "predicted": "plastic",
+    "confidence": 0.6553,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/battery/battery464.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9784,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery469.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9924,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery486.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9994,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery489.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9992,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery512.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9929,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery517.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.628,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery521.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9999,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery522.jpg",
+    "actual": "battery",
+    "predicted": "metal",
+    "confidence": 0.7333,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/battery/battery525.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.8596,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery56.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.8822,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery565.jpg",
+    "actual": "battery",
+    "predicted": "organic",
+    "confidence": 0.4597,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/battery/battery591.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9797,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery594.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.8801,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery601.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9996,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery608.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9874,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery612.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.5506,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery616.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9992,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery621.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.8656,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery631.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9901,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery642.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9089,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery643.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9976,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery654.jpg",
+    "actual": "battery",
+    "predicted": "metal",
+    "confidence": 0.7732,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/battery/battery656.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9758,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery660.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9438,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery67.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.8131,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery679.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9598,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery685.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9707,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery689.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9735,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery69.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.988,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery692.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9438,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery697.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.898,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery699.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9966,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery709.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.6159,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery717.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9143,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery722.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9992,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery728.jpg",
+    "actual": "battery",
+    "predicted": "metal",
+    "confidence": 0.5456,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/battery/battery742.jpg",
+    "actual": "battery",
+    "predicted": "plastic",
+    "confidence": 0.8876,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/battery/battery746.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.5525,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery755.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9688,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery76.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.6083,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery760.jpg",
+    "actual": "battery",
+    "predicted": "plastic",
+    "confidence": 0.7532,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/battery/battery766.jpg",
+    "actual": "battery",
+    "predicted": "organic",
+    "confidence": 0.5422,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/battery/battery80.jpg",
+    "actual": "battery",
+    "predicted": "organic",
+    "confidence": 0.4242,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/battery/battery84.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9383,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery85.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9887,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery88.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.959,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery89.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.462,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery90.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9975,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery91.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9987,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery92.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.9977,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/battery/battery94.jpg",
+    "actual": "battery",
+    "predicted": "organic",
+    "confidence": 0.7737,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/battery/battery96.jpg",
+    "actual": "battery",
+    "predicted": "battery",
+    "confidence": 0.8903,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass108.jpg",
+    "actual": "glass",
+    "predicted": "metal",
+    "confidence": 0.3649,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass11.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.5441,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass111.jpg",
+    "actual": "glass",
+    "predicted": "paper",
+    "confidence": 0.4757,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass114.jpg",
+    "actual": "glass",
+    "predicted": "metal",
+    "confidence": 0.3276,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass125.jpg",
+    "actual": "glass",
+    "predicted": "paper",
+    "confidence": 0.5415,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass140.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.5182,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass149.jpg",
+    "actual": "glass",
+    "predicted": "paper",
+    "confidence": 0.4826,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass178.jpg",
+    "actual": "glass",
+    "predicted": "metal",
+    "confidence": 0.5896,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass179.jpg",
+    "actual": "glass",
+    "predicted": "plastic",
+    "confidence": 0.8079,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass185.jpg",
+    "actual": "glass",
+    "predicted": "plastic",
+    "confidence": 0.8167,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass191.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.3792,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass194.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.4585,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass209.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.3805,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass21.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.5096,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass215.jpg",
+    "actual": "glass",
+    "predicted": "plastic",
+    "confidence": 0.6079,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass24.jpg",
+    "actual": "glass",
+    "predicted": "plastic",
+    "confidence": 0.4519,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass261.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.8646,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass264.jpg",
+    "actual": "glass",
+    "predicted": "battery",
+    "confidence": 0.4313,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass267.jpg",
+    "actual": "glass",
+    "predicted": "plastic",
+    "confidence": 0.5697,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass27.jpg",
+    "actual": "glass",
+    "predicted": "paper",
+    "confidence": 0.6859,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass275.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.8387,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass276.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.7985,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass277.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.8322,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass278.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.4166,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass295.jpg",
+    "actual": "glass",
+    "predicted": "metal",
+    "confidence": 0.6356,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass299.jpg",
+    "actual": "glass",
+    "predicted": "plastic",
+    "confidence": 0.6474,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass302.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.6919,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass308.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.5485,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass311.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.349,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass320.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.8252,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass321.jpg",
+    "actual": "glass",
+    "predicted": "paper",
+    "confidence": 0.7755,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass323.jpg",
+    "actual": "glass",
+    "predicted": "plastic",
+    "confidence": 0.6438,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass325.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.7598,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass330.jpg",
+    "actual": "glass",
+    "predicted": "paper",
+    "confidence": 0.7472,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass337.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.7591,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass346.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.5731,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass348.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.5502,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass349.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.6305,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass351.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.89,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass353.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.8701,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass354.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.8426,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass356.jpg",
+    "actual": "glass",
+    "predicted": "battery",
+    "confidence": 0.5335,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass357.jpg",
+    "actual": "glass",
+    "predicted": "paper",
+    "confidence": 0.6071,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass36.jpg",
+    "actual": "glass",
+    "predicted": "paper",
+    "confidence": 0.4603,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass361.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.7401,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass369.jpg",
+    "actual": "glass",
+    "predicted": "battery",
+    "confidence": 0.6517,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass370.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.8694,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass372.jpg",
+    "actual": "glass",
+    "predicted": "battery",
+    "confidence": 0.6328,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass378.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.731,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass381.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.7108,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass390.jpg",
+    "actual": "glass",
+    "predicted": "paper",
+    "confidence": 0.459,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass397.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.6851,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass399.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.6757,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass403.jpg",
+    "actual": "glass",
+    "predicted": "battery",
+    "confidence": 0.5255,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass409.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.6229,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass412.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.3633,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass416.jpg",
+    "actual": "glass",
+    "predicted": "metal",
+    "confidence": 0.549,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass423.jpg",
+    "actual": "glass",
+    "predicted": "battery",
+    "confidence": 0.5004,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass426.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.8455,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass431.jpg",
+    "actual": "glass",
+    "predicted": "metal",
+    "confidence": 0.6853,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass439.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.6675,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass449.jpg",
+    "actual": "glass",
+    "predicted": "metal",
+    "confidence": 0.5151,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass472.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.7868,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass474.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.8326,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass491.jpg",
+    "actual": "glass",
+    "predicted": "metal",
+    "confidence": 0.6125,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass50.jpg",
+    "actual": "glass",
+    "predicted": "metal",
+    "confidence": 0.4697,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass500.jpg",
+    "actual": "glass",
+    "predicted": "plastic",
+    "confidence": 0.6347,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass511.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.4169,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass514.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.7887,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass517.jpg",
+    "actual": "glass",
+    "predicted": "battery",
+    "confidence": 0.4124,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass527.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.8699,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass528.jpg",
+    "actual": "glass",
+    "predicted": "paper",
+    "confidence": 0.4162,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass531.jpg",
+    "actual": "glass",
+    "predicted": "metal",
+    "confidence": 0.496,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass535.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.8748,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass538.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.8666,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass545.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.827,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass549.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.787,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass55.jpg",
+    "actual": "glass",
+    "predicted": "metal",
+    "confidence": 0.4545,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass551.jpg",
+    "actual": "glass",
+    "predicted": "battery",
+    "confidence": 0.9243,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass555.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.6281,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass576.jpg",
+    "actual": "glass",
+    "predicted": "metal",
+    "confidence": 0.3761,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass580.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.5621,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass583.jpg",
+    "actual": "glass",
+    "predicted": "plastic",
+    "confidence": 0.4576,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass589.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.7784,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass591.jpg",
+    "actual": "glass",
+    "predicted": "metal",
+    "confidence": 0.5243,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass593.jpg",
+    "actual": "glass",
+    "predicted": "battery",
+    "confidence": 0.6674,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass596.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.4734,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass606.jpg",
+    "actual": "glass",
+    "predicted": "metal",
+    "confidence": 0.3763,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass609.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.8515,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass610.jpg",
+    "actual": "glass",
+    "predicted": "metal",
+    "confidence": 0.6044,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass611.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.8864,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass624.jpg",
+    "actual": "glass",
+    "predicted": "battery",
+    "confidence": 0.4122,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass628.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.5278,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass635.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.7286,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass642.jpg",
+    "actual": "glass",
+    "predicted": "organic",
+    "confidence": 0.4546,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass645.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.7621,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass649.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.8756,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass65.jpg",
+    "actual": "glass",
+    "predicted": "metal",
+    "confidence": 0.339,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass661.jpg",
+    "actual": "glass",
+    "predicted": "paper",
+    "confidence": 0.7031,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass667.jpg",
+    "actual": "glass",
+    "predicted": "metal",
+    "confidence": 0.4639,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass688.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.8798,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass695.jpg",
+    "actual": "glass",
+    "predicted": "metal",
+    "confidence": 0.5981,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass7.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.5916,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass703.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.5214,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass710.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.8396,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass715.jpg",
+    "actual": "glass",
+    "predicted": "organic",
+    "confidence": 0.4689,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass735.jpg",
+    "actual": "glass",
+    "predicted": "battery",
+    "confidence": 0.9536,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass736.jpg",
+    "actual": "glass",
+    "predicted": "paper",
+    "confidence": 0.8039,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass737.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.6789,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass74.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.3894,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/glass/glass746.jpg",
+    "actual": "glass",
+    "predicted": "metal",
+    "confidence": 0.5548,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass748.jpg",
+    "actual": "glass",
+    "predicted": "organic",
+    "confidence": 0.8138,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass751.jpg",
+    "actual": "glass",
+    "predicted": "plastic",
+    "confidence": 0.4222,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass773.jpg",
+    "actual": "glass",
+    "predicted": "paper",
+    "confidence": 0.5993,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass78.jpg",
+    "actual": "glass",
+    "predicted": "metal",
+    "confidence": 0.2998,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass8.jpg",
+    "actual": "glass",
+    "predicted": "paper",
+    "confidence": 0.4259,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/glass/glass9.jpg",
+    "actual": "glass",
+    "predicted": "glass",
+    "confidence": 0.4159,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal105.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.8021,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal116.jpg",
+    "actual": "metal",
+    "predicted": "paper",
+    "confidence": 0.4465,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal118.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.5709,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal127.jpg",
+    "actual": "metal",
+    "predicted": "paper",
+    "confidence": 0.5075,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal138.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.5335,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal140.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.7969,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal144.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.6377,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal147.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.4986,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal15.jpg",
+    "actual": "metal",
+    "predicted": "paper",
+    "confidence": 0.3757,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal165.jpg",
+    "actual": "metal",
+    "predicted": "paper",
+    "confidence": 0.3903,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal17.jpg",
+    "actual": "metal",
+    "predicted": "glass",
+    "confidence": 0.3858,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal170.jpg",
+    "actual": "metal",
+    "predicted": "paper",
+    "confidence": 0.4886,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal171.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.3165,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal174.jpg",
+    "actual": "metal",
+    "predicted": "paper",
+    "confidence": 0.4367,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal177.jpg",
+    "actual": "metal",
+    "predicted": "glass",
+    "confidence": 0.5966,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal180.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.6219,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal183.jpg",
+    "actual": "metal",
+    "predicted": "glass",
+    "confidence": 0.4843,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal197.jpg",
+    "actual": "metal",
+    "predicted": "paper",
+    "confidence": 0.5425,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal200.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.6846,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal203.jpg",
+    "actual": "metal",
+    "predicted": "paper",
+    "confidence": 0.3469,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal204.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.3714,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal209.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.3869,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal218.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.606,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal225.jpg",
+    "actual": "metal",
+    "predicted": "organic",
+    "confidence": 0.3443,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal242.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.7141,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal244.jpg",
+    "actual": "metal",
+    "predicted": "paper",
+    "confidence": 0.473,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal254.jpg",
+    "actual": "metal",
+    "predicted": "paper",
+    "confidence": 0.4833,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal257.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.746,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal260.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.7213,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal288.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.563,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal294.jpg",
+    "actual": "metal",
+    "predicted": "paper",
+    "confidence": 0.5436,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal298.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.7887,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal301.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.9043,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal302.jpg",
+    "actual": "metal",
+    "predicted": "paper",
+    "confidence": 0.7874,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal310.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.565,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal323.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.5828,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal334.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.5738,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal35.jpg",
+    "actual": "metal",
+    "predicted": "organic",
+    "confidence": 0.772,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal350.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.3545,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal360.jpg",
+    "actual": "metal",
+    "predicted": "battery",
+    "confidence": 0.4025,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal366.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.7495,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal377.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.6077,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal383.jpg",
+    "actual": "metal",
+    "predicted": "organic",
+    "confidence": 0.5268,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal385.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.3047,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal387.jpg",
+    "actual": "metal",
+    "predicted": "paper",
+    "confidence": 0.653,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal388.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.8765,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal399.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.7397,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal400.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.5492,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal406.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.571,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal411.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.6239,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal413.jpg",
+    "actual": "metal",
+    "predicted": "paper",
+    "confidence": 0.5748,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal417.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.4447,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal425.jpg",
+    "actual": "metal",
+    "predicted": "paper",
+    "confidence": 0.494,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal432.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.5608,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal44.jpg",
+    "actual": "metal",
+    "predicted": "paper",
+    "confidence": 0.564,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal446.jpg",
+    "actual": "metal",
+    "predicted": "glass",
+    "confidence": 0.5418,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal45.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.3888,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal463.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.5359,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal464.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.5618,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal465.jpg",
+    "actual": "metal",
+    "predicted": "paper",
+    "confidence": 0.4988,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal469.jpg",
+    "actual": "metal",
+    "predicted": "organic",
+    "confidence": 0.8372,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal472.jpg",
+    "actual": "metal",
+    "predicted": "paper",
+    "confidence": 0.3234,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal481.jpg",
+    "actual": "metal",
+    "predicted": "organic",
+    "confidence": 0.9596,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal484.jpg",
+    "actual": "metal",
+    "predicted": "plastic",
+    "confidence": 0.7376,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal486.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.65,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal490.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.4567,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal495.jpg",
+    "actual": "metal",
+    "predicted": "paper",
+    "confidence": 0.3631,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal496.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.4899,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal500.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.932,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal501.jpg",
+    "actual": "metal",
+    "predicted": "plastic",
+    "confidence": 0.3964,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal506.jpg",
+    "actual": "metal",
+    "predicted": "paper",
+    "confidence": 0.5019,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal507.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.6142,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal517.jpg",
+    "actual": "metal",
+    "predicted": "battery",
+    "confidence": 0.5975,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal522.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.6317,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal523.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.5159,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal547.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.7976,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal548.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.601,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal558.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.4358,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal560.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.5104,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal57.jpg",
+    "actual": "metal",
+    "predicted": "plastic",
+    "confidence": 0.332,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal571.jpg",
+    "actual": "metal",
+    "predicted": "battery",
+    "confidence": 0.455,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal582.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.6955,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal585.jpg",
+    "actual": "metal",
+    "predicted": "paper",
+    "confidence": 0.3943,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal589.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.6183,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal590.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.6943,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal614.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.7243,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal622.jpg",
+    "actual": "metal",
+    "predicted": "paper",
+    "confidence": 0.3525,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal628.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.6239,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal63.jpg",
+    "actual": "metal",
+    "predicted": "paper",
+    "confidence": 0.4832,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal642.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.6328,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal646.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.5836,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal649.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.8219,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal651.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.7434,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal659.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.7122,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal669.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.4884,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal683.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.6853,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal69.jpg",
+    "actual": "metal",
+    "predicted": "plastic",
+    "confidence": 0.3896,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal709.jpg",
+    "actual": "metal",
+    "predicted": "plastic",
+    "confidence": 0.33,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal714.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.5636,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal715.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.7128,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal719.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.5024,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal720.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.4759,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal724.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.4524,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal726.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.6932,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal742.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.4556,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal748.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.7507,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal759.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.3818,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal761.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.5293,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal763.jpg",
+    "actual": "metal",
+    "predicted": "glass",
+    "confidence": 0.5396,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal764.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.544,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal79.jpg",
+    "actual": "metal",
+    "predicted": "organic",
+    "confidence": 0.8791,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal84.jpg",
+    "actual": "metal",
+    "predicted": "paper",
+    "confidence": 0.4017,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal85.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.624,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal89.jpg",
+    "actual": "metal",
+    "predicted": "battery",
+    "confidence": 0.5719,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal9.jpg",
+    "actual": "metal",
+    "predicted": "paper",
+    "confidence": 0.4478,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/metal/metal93.jpg",
+    "actual": "metal",
+    "predicted": "metal",
+    "confidence": 0.6457,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/metal/metal98.jpg",
+    "actual": "metal",
+    "predicted": "paper",
+    "confidence": 0.5952,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/organic/biological114.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.7355,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological116.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.5386,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological123.jpg",
+    "actual": "organic",
+    "predicted": "paper",
+    "confidence": 0.9817,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/organic/biological128.jpg",
+    "actual": "organic",
+    "predicted": "paper",
+    "confidence": 0.3524,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/organic/biological138.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.8781,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological146.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9932,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological156.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9981,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological171.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9833,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological20.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9037,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological210.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.8944,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological226.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.4347,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological228.jpg",
+    "actual": "organic",
+    "predicted": "battery",
+    "confidence": 0.3376,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/organic/biological233.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.5803,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological235.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.7405,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological236.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9816,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological239.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9182,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological249.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9383,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological256.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9836,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological259.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.4177,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological275.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.5587,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological276.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.991,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological287.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9589,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological290.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9962,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological306.jpg",
+    "actual": "organic",
+    "predicted": "paper",
+    "confidence": 0.5931,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/organic/biological309.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.866,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological322.jpg",
+    "actual": "organic",
+    "predicted": "paper",
+    "confidence": 0.9018,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/organic/biological326.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.7681,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological342.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9224,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological343.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9957,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological351.jpg",
+    "actual": "organic",
+    "predicted": "metal",
+    "confidence": 0.3036,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/organic/biological356.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.664,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological364.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9245,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological365.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9739,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological367.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.851,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological373.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.6963,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological374.jpg",
+    "actual": "organic",
+    "predicted": "paper",
+    "confidence": 0.8248,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/organic/biological375.jpg",
+    "actual": "organic",
+    "predicted": "paper",
+    "confidence": 0.8509,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/organic/biological383.jpg",
+    "actual": "organic",
+    "predicted": "metal",
+    "confidence": 0.6097,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/organic/biological389.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9961,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological391.jpg",
+    "actual": "organic",
+    "predicted": "glass",
+    "confidence": 0.6015,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/organic/biological393.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9731,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological399.jpg",
+    "actual": "organic",
+    "predicted": "metal",
+    "confidence": 0.4725,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/organic/biological400.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.8927,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological404.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.6025,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological409.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.831,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological414.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.4846,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological417.jpg",
+    "actual": "organic",
+    "predicted": "metal",
+    "confidence": 0.4865,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/organic/biological420.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9993,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological425.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.8962,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological439.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.8625,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological446.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9488,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological449.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.8501,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological45.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9936,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological461.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.6603,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological463.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9872,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological478.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9282,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological48.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9955,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological483.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9134,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological485.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9821,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological505.jpg",
+    "actual": "organic",
+    "predicted": "paper",
+    "confidence": 0.5427,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/organic/biological522.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.8688,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological533.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9949,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological536.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9895,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological537.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.6107,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological54.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9731,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological541.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.6845,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological545.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.8543,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological55.jpg",
+    "actual": "organic",
+    "predicted": "paper",
+    "confidence": 0.5837,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/organic/biological550.jpg",
+    "actual": "organic",
+    "predicted": "paper",
+    "confidence": 0.5404,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/organic/biological561.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.8103,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological567.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9478,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological569.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.6616,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological574.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9919,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological578.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.5592,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological582.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.365,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological584.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.8856,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological590.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.549,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological60.jpg",
+    "actual": "organic",
+    "predicted": "paper",
+    "confidence": 0.9782,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/organic/biological602.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.718,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological613.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.3729,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological615.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.8178,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological616.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.635,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological618.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.5393,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological627.jpg",
+    "actual": "organic",
+    "predicted": "paper",
+    "confidence": 0.626,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/organic/biological628.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.966,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological631.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9881,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological632.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.7861,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological637.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.994,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological646.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9943,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological65.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9235,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological658.jpg",
+    "actual": "organic",
+    "predicted": "paper",
+    "confidence": 0.7379,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/organic/biological661.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.7941,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological663.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.8698,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological664.jpg",
+    "actual": "organic",
+    "predicted": "battery",
+    "confidence": 0.9336,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/organic/biological668.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.6,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological670.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.6007,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological68.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9104,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological692.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9988,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological701.jpg",
+    "actual": "organic",
+    "predicted": "paper",
+    "confidence": 0.5309,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/organic/biological703.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.7544,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological71.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9297,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological72.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9123,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological727.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.7818,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological731.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9333,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological733.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9772,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological736.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.7455,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological743.jpg",
+    "actual": "organic",
+    "predicted": "paper",
+    "confidence": 0.4743,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/organic/biological745.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9825,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological752.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9956,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological758.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.8503,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological768.jpg",
+    "actual": "organic",
+    "predicted": "paper",
+    "confidence": 0.5053,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/organic/biological77.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9101,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological771.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9032,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological773.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9916,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological83.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.862,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/organic/biological84.jpg",
+    "actual": "organic",
+    "predicted": "paper",
+    "confidence": 0.6267,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/organic/biological89.jpg",
+    "actual": "organic",
+    "predicted": "organic",
+    "confidence": 0.9397,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper108.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9431,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper121.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9955,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper123.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9616,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper132.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.7226,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper14.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9474,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper162.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9364,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper167.jpg",
+    "actual": "paper",
+    "predicted": "metal",
+    "confidence": 0.2549,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/paper/paper178.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.8162,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper189.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9933,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper19.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.4757,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper196.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9957,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper197.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.911,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper2.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.5964,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper203.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.7288,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper205.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.8014,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper227.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9772,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper23.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9441,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper238.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.4253,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper240.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.6346,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper252.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.7973,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper265.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9827,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper283.jpg",
+    "actual": "paper",
+    "predicted": "metal",
+    "confidence": 0.315,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/paper/paper29.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.5121,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper292.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.5694,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper302.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.6499,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper303.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.4866,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper321.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.6695,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper322.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.451,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper328.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.8656,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper331.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.7265,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper337.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.7999,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper358.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.8011,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper368.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.4542,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper371.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.991,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper379.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.986,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper387.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.4417,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper393.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.6744,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper4.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9972,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper404.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.481,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper415.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.978,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper417.jpg",
+    "actual": "paper",
+    "predicted": "plastic",
+    "confidence": 0.3505,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/paper/paper42.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9219,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper426.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.6183,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper430.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.5959,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper435.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.919,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper444.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.5174,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper446.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.6687,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper447.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.7045,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper46.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9253,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper461.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.6295,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper466.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.557,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper468.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.5943,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper469.jpg",
+    "actual": "paper",
+    "predicted": "metal",
+    "confidence": 0.2992,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/paper/paper476.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.5066,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper482.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.5962,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper485.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.6751,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper49.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.972,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper496.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9294,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper502.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.967,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper51.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.5113,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper512.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9725,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper516.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.8232,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper519.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.7369,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper524.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.4013,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper526.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.937,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper538.jpg",
+    "actual": "paper",
+    "predicted": "glass",
+    "confidence": 0.596,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/paper/paper540.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9281,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper544.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9868,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper551.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.5516,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper56.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.5744,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper560.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.6297,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper566.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9943,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper57.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.7434,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper578.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9081,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper58.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.756,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper592.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.4905,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper594.jpg",
+    "actual": "paper",
+    "predicted": "glass",
+    "confidence": 0.3598,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/paper/paper60.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.6519,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper601.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.7302,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper606.jpg",
+    "actual": "paper",
+    "predicted": "plastic",
+    "confidence": 0.3938,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/paper/paper613.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9441,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper618.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.764,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper619.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9164,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper63.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.5774,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper634.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9978,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper636.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.5262,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper641.jpg",
+    "actual": "paper",
+    "predicted": "metal",
+    "confidence": 0.419,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/paper/paper645.jpg",
+    "actual": "paper",
+    "predicted": "glass",
+    "confidence": 0.3222,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/paper/paper647.jpg",
+    "actual": "paper",
+    "predicted": "metal",
+    "confidence": 0.3117,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/paper/paper650.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9724,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper664.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.5165,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper683.jpg",
+    "actual": "paper",
+    "predicted": "metal",
+    "confidence": 0.3499,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/paper/paper688.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.973,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper694.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9983,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper696.jpg",
+    "actual": "paper",
+    "predicted": "battery",
+    "confidence": 0.8286,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/paper/paper702.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.6499,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper705.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.7002,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper706.jpg",
+    "actual": "paper",
+    "predicted": "plastic",
+    "confidence": 0.547,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/paper/paper709.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9175,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper711.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.6112,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper72.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9859,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper723.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9911,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper728.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.6275,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper736.jpg",
+    "actual": "paper",
+    "predicted": "plastic",
+    "confidence": 0.4841,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/paper/paper737.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9885,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper738.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.7265,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper74.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9771,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper742.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.5251,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper752.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.8228,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper759.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.819,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper77.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9015,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper772.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.4654,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper79.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.952,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper92.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.9843,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper94.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.5119,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper97.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.4787,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/paper/paper98.jpg",
+    "actual": "paper",
+    "predicted": "paper",
+    "confidence": 0.7229,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic116.jpg",
+    "actual": "plastic",
+    "predicted": "metal",
+    "confidence": 0.4259,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic117.jpg",
+    "actual": "plastic",
+    "predicted": "paper",
+    "confidence": 0.3626,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic122.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.9073,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic124.jpg",
+    "actual": "plastic",
+    "predicted": "paper",
+    "confidence": 0.3968,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic126.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.3779,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic130.jpg",
+    "actual": "plastic",
+    "predicted": "paper",
+    "confidence": 0.5571,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic133.jpg",
+    "actual": "plastic",
+    "predicted": "organic",
+    "confidence": 0.6865,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic138.jpg",
+    "actual": "plastic",
+    "predicted": "paper",
+    "confidence": 0.461,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic145.jpg",
+    "actual": "plastic",
+    "predicted": "paper",
+    "confidence": 0.6401,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic150.jpg",
+    "actual": "plastic",
+    "predicted": "paper",
+    "confidence": 0.4707,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic152.jpg",
+    "actual": "plastic",
+    "predicted": "glass",
+    "confidence": 0.6058,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic155.jpg",
+    "actual": "plastic",
+    "predicted": "glass",
+    "confidence": 0.3722,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic159.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.473,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic18.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.8424,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic182.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.845,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic184.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.4869,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic191.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.8987,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic211.jpg",
+    "actual": "plastic",
+    "predicted": "metal",
+    "confidence": 0.5011,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic217.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.8402,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic225.jpg",
+    "actual": "plastic",
+    "predicted": "paper",
+    "confidence": 0.4274,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic23.jpg",
+    "actual": "plastic",
+    "predicted": "paper",
+    "confidence": 0.4068,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic236.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.6124,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic246.jpg",
+    "actual": "plastic",
+    "predicted": "metal",
+    "confidence": 0.4636,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic254.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.629,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic258.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.4926,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic259.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.8148,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic260.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.5218,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic261.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.7552,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic265.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.7469,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic271.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.6829,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic272.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.8196,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic281.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.3805,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic283.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.6744,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic297.jpg",
+    "actual": "plastic",
+    "predicted": "metal",
+    "confidence": 0.2709,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic300.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.8538,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic313.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.5603,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic317.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.8608,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic320.jpg",
+    "actual": "plastic",
+    "predicted": "paper",
+    "confidence": 0.4132,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic325.jpg",
+    "actual": "plastic",
+    "predicted": "metal",
+    "confidence": 0.5133,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic327.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.8598,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic329.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.806,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic344.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.65,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic348.jpg",
+    "actual": "plastic",
+    "predicted": "metal",
+    "confidence": 0.4955,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic352.jpg",
+    "actual": "plastic",
+    "predicted": "metal",
+    "confidence": 0.7329,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic357.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.4848,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic358.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.7906,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic371.jpg",
+    "actual": "plastic",
+    "predicted": "metal",
+    "confidence": 0.679,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic384.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.8644,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic392.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.4329,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic393.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.8302,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic396.jpg",
+    "actual": "plastic",
+    "predicted": "paper",
+    "confidence": 0.7424,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic404.jpg",
+    "actual": "plastic",
+    "predicted": "glass",
+    "confidence": 0.5541,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic416.jpg",
+    "actual": "plastic",
+    "predicted": "glass",
+    "confidence": 0.6523,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic423.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.831,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic425.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.8124,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic426.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.6562,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic429.jpg",
+    "actual": "plastic",
+    "predicted": "paper",
+    "confidence": 0.4832,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic43.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.8342,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic451.jpg",
+    "actual": "plastic",
+    "predicted": "paper",
+    "confidence": 0.8299,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic452.jpg",
+    "actual": "plastic",
+    "predicted": "paper",
+    "confidence": 0.4738,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic457.jpg",
+    "actual": "plastic",
+    "predicted": "paper",
+    "confidence": 0.8704,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic463.jpg",
+    "actual": "plastic",
+    "predicted": "paper",
+    "confidence": 0.463,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic479.jpg",
+    "actual": "plastic",
+    "predicted": "glass",
+    "confidence": 0.4529,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic486.jpg",
+    "actual": "plastic",
+    "predicted": "metal",
+    "confidence": 0.4498,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic492.jpg",
+    "actual": "plastic",
+    "predicted": "paper",
+    "confidence": 0.3799,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic499.jpg",
+    "actual": "plastic",
+    "predicted": "glass",
+    "confidence": 0.6665,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic508.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.7533,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic51.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.8315,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic524.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.399,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic534.jpg",
+    "actual": "plastic",
+    "predicted": "glass",
+    "confidence": 0.3808,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic54.jpg",
+    "actual": "plastic",
+    "predicted": "paper",
+    "confidence": 0.6172,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic540.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.8477,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic541.jpg",
+    "actual": "plastic",
+    "predicted": "metal",
+    "confidence": 0.4171,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic546.jpg",
+    "actual": "plastic",
+    "predicted": "paper",
+    "confidence": 0.5238,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic551.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.6747,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic553.jpg",
+    "actual": "plastic",
+    "predicted": "metal",
+    "confidence": 0.5162,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic557.jpg",
+    "actual": "plastic",
+    "predicted": "metal",
+    "confidence": 0.5815,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic559.jpg",
+    "actual": "plastic",
+    "predicted": "paper",
+    "confidence": 0.3717,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic562.jpg",
+    "actual": "plastic",
+    "predicted": "organic",
+    "confidence": 0.3246,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic584.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.7685,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic585.jpg",
+    "actual": "plastic",
+    "predicted": "glass",
+    "confidence": 0.5333,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic588.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.7186,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic591.jpg",
+    "actual": "plastic",
+    "predicted": "glass",
+    "confidence": 0.5104,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic6.jpg",
+    "actual": "plastic",
+    "predicted": "paper",
+    "confidence": 0.5436,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic60.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.8614,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic600.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.926,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic606.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.8756,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic618.jpg",
+    "actual": "plastic",
+    "predicted": "battery",
+    "confidence": 0.3486,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic619.jpg",
+    "actual": "plastic",
+    "predicted": "paper",
+    "confidence": 0.3968,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic620.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.8106,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic622.jpg",
+    "actual": "plastic",
+    "predicted": "glass",
+    "confidence": 0.4701,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic628.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.5425,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic63.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.3946,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic638.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.7925,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic644.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.3779,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic645.jpg",
+    "actual": "plastic",
+    "predicted": "metal",
+    "confidence": 0.4523,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic65.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.872,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic654.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.8188,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic665.jpg",
+    "actual": "plastic",
+    "predicted": "organic",
+    "confidence": 0.5438,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic668.jpg",
+    "actual": "plastic",
+    "predicted": "paper",
+    "confidence": 0.4032,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic670.jpg",
+    "actual": "plastic",
+    "predicted": "metal",
+    "confidence": 0.3346,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic680.jpg",
+    "actual": "plastic",
+    "predicted": "metal",
+    "confidence": 0.4182,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic692.jpg",
+    "actual": "plastic",
+    "predicted": "metal",
+    "confidence": 0.4677,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic695.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.8966,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic696.jpg",
+    "actual": "plastic",
+    "predicted": "glass",
+    "confidence": 0.8177,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic704.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.9422,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic72.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.6898,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic720.jpg",
+    "actual": "plastic",
+    "predicted": "metal",
+    "confidence": 0.3518,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic728.jpg",
+    "actual": "plastic",
+    "predicted": "glass",
+    "confidence": 0.837,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic729.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.5777,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic735.jpg",
+    "actual": "plastic",
+    "predicted": "glass",
+    "confidence": 0.4936,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic740.jpg",
+    "actual": "plastic",
+    "predicted": "glass",
+    "confidence": 0.4589,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic748.jpg",
+    "actual": "plastic",
+    "predicted": "plastic",
+    "confidence": 0.9444,
+    "correct": true
+  },
+  {
+    "file": "dataset/test/plastic/plastic767.jpg",
+    "actual": "plastic",
+    "predicted": "metal",
+    "confidence": 0.7117,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic773.jpg",
+    "actual": "plastic",
+    "predicted": "organic",
+    "confidence": 0.2969,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic82.jpg",
+    "actual": "plastic",
+    "predicted": "paper",
+    "confidence": 0.4915,
+    "correct": false
+  },
+  {
+    "file": "dataset/test/plastic/plastic83.jpg",
+    "actual": "plastic",
+    "predicted": "metal",
+    "confidence": 0.4377,
+    "correct": false
+  }
+]

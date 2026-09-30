@@ -52,6 +52,11 @@ def load_datasets():
     test_ds = test_ds.cache().prefetch(autotune)
     return train_ds, val_ds, test_ds, class_names
 
+def load_test_dataset_with_paths():
+    """Return (test_ds, class_names, file_paths). Test order is fixed (no shuffle)."""
+    raw = _load_split(TEST_DIR, shuffle=False)
+    file_paths = list(raw.file_paths)   # must be read before prefetch/cache
+    return raw.prefetch(tf.data.AUTOTUNE), raw.class_names, file_paths
 
 def build_augmentation(allow_horizontal_flip=True):
     """Augmentation layers. Active only during training (training=True).
