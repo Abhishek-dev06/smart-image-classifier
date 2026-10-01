@@ -10,6 +10,7 @@ import argparse
 import json
 import os
 import sys
+import warnings
 from pathlib import Path
 
 os.environ.setdefault("TF_CPP_MIN_LOG_LEVEL", "2")  # hide TensorFlow info logs
@@ -20,42 +21,70 @@ from PIL import Image, ImageOps, UnidentifiedImageError
 from tensorflow import keras
 
 from utils import (MODEL_PATH, CLASS_NAMES_PATH, RESULTS_DIR, TEST_IMAGES_DIR,
-                   PROJECT_ROOT, IMAGE_SIZE, VALID_EXTENSIONS)
+                   PROJECT_ROOT, IMAGE_SIZE, INFERENCE_EXTENSIONS)
 
 LOW_CONFIDENCE = 0.60
 
 
-def load_model_and_classes():
+def load_model_and_classes(model_path=MODEL_PATH, class_names_path=CLASS_NAMES_PATH):
     """Load the trained model and its class names."""
-    if not MODEL_PATH.exists() or not CLASS_NAMES_PATH.exists():
+    model_path, class_names_path = Path(model_path), Path(class_names_path)
+    if not model_path.is_file() or not class_names_path.is_file():
         raise FileNotFoundError(
             "Trained model or class_names.json not found in models/.\n"
             "Run: python src/train.py")
-    model = keras.models.load_model(MODEL_PATH)
-    with open(CLASS_NAMES_PATH, encoding="utf-8") as f:
+    with open(class_names_path, encoding="utf-8") as f:
         class_names = json.load(f)
+    if (not isinstance(class_names, list) or not class_names
+            or any(not isinstance(name, str) or not name.strip() for name in class_names)
+            or len(set(class_names)) != len(class_names)):
+        raise ValueError("class_names.json must contain a nonempty list of unique class names.")
+    # Inference does not need saved optimizer state or training metrics.
+    model = keras.models.load_model(model_path, compile=False)
+    if tuple(model.input_shape) != (None, *IMAGE_SIZE, 3):
+        raise ValueError(f"Model must accept RGB images of size {IMAGE_SIZE}.")
+    if tuple(model.output_shape) != (None, len(class_names)):
+        raise ValueError("Model output count does not match class_names.json.")
     return model, class_names
 
 
 def load_image(source):
     """Open an image (path or uploaded file) and return it as an RGB PIL image."""
     try:
-        with Image.open(source) as img:
-            return ImageOps.exif_transpose(img).convert("RGB")
-    except (UnidentifiedImageError, OSError) as error:
+        if hasattr(source, "seek"):
+            source.seek(0)
+        with warnings.catch_warnings():
+            warnings.simplefilter("error", Image.DecompressionBombWarning)
+            with Image.open(source) as img:
+                image = ImageOps.exif_transpose(img)
+                # Match the usual white background of transparent product photos.
+                if "A" in image.getbands() or "transparency" in image.info:
+                    rgba = image.convert("RGBA")
+                    background = Image.new("RGBA", rgba.size, "white")
+                    image = Image.alpha_composite(background, rgba)
+                return image.convert("RGB")
+    except (UnidentifiedImageError, OSError, Image.DecompressionBombError,
+            Image.DecompressionBombWarning) as error:
         raise ValueError(f"Could not read the image: {error}") from error
 
 
 def preprocess(img):
     """Resize like the training pipeline. Normalization happens inside the model."""
-    array = np.asarray(img, dtype="float32")             # values stay in 0-255
+    array = np.asarray(img.convert("RGB"), dtype="float32")  # values stay in 0-255
     array = tf.image.resize(array, IMAGE_SIZE).numpy()   # bilinear, same as training loader
     return np.expand_dims(array, axis=0)
 
 
 def predict(model, class_names, img):
     """Return [(class_name, probability), ...] sorted from most to least likely."""
-    probabilities = model.predict(preprocess(img), verbose=0)[0]
+    output = np.asarray(model.predict(preprocess(img), verbose=0))
+    if output.shape != (1, len(class_names)) or not class_names:
+        raise ValueError("Model prediction shape does not match the class names.")
+    probabilities = output[0]
+    if (not np.isfinite(probabilities).all() or (probabilities < 0).any()
+            or (probabilities > 1).any()
+            or not np.isclose(probabilities.sum(), 1.0, atol=1e-5)):
+        raise ValueError("Model returned invalid probabilities; check the model artifact.")
     order = np.argsort(probabilities)[::-1]
     return [(class_names[i], float(probabilities[i])) for i in order]
 
@@ -64,7 +93,8 @@ def expected_class(path, class_names):
     """Guess the true class from the file name (e.g. plastic_bottle.jpg)."""
     stem = path.stem.lower()
     for name in sorted(class_names, key=len, reverse=True):
-        if stem.startswith(name.lower()):
+        label = name.lower()
+        if stem == label or any(stem.startswith(label + sep) for sep in ("_", "-", " ")):
             return name
     return None
 
@@ -82,10 +112,10 @@ def collect_paths(arguments):
     if not TEST_IMAGES_DIR.exists():
         raise FileNotFoundError(f"Folder not found: {TEST_IMAGES_DIR}")
     paths = sorted(p for p in TEST_IMAGES_DIR.iterdir()
-                   if p.suffix.lower() in VALID_EXTENSIONS)
+                   if p.is_file() and p.suffix.lower() in INFERENCE_EXTENSIONS)
     if not paths:
         raise FileNotFoundError(
-            f"No .jpg/.jpeg/.png images found in {TEST_IMAGES_DIR}")
+            f"No supported images found in {TEST_IMAGES_DIR}: {sorted(INFERENCE_EXTENSIONS)}")
     return paths
 
 
@@ -94,28 +124,36 @@ def main():
     parser.add_argument("images", nargs="*", help="image path(s); default: test_images/")
     parser.add_argument("--save", action="store_true",
                         help="save results to results/unseen_predictions.json")
+    parser.add_argument("--output", type=Path,
+                        help="save predictions to a custom JSON path (implies --save)")
     args = parser.parse_args()
 
     try:
         paths = collect_paths(args.images)
         model, class_names = load_model_and_classes()
-    except FileNotFoundError as error:
+    except (OSError, ValueError, TypeError) as error:
         sys.exit(f"Error: {error}")
 
+    print("Waste classifier only. Supported classes: " + ", ".join(class_names))
+    print("Other subjects still receive a waste label, even at high confidence.")
     results = []
+    failed = 0
     for path in paths:
         print("\n" + "-" * 40)
         print(f"Image: {path.name}")
-        if not path.exists():
+        if not path.is_file():
             print("  Error: file not found.")
+            failed += 1
             continue
-        if path.suffix.lower() not in VALID_EXTENSIONS:
-            print(f"  Error: unsupported format. Use {sorted(VALID_EXTENSIONS)}")
+        if path.suffix.lower() not in INFERENCE_EXTENSIONS:
+            print(f"  Error: unsupported format. Use {sorted(INFERENCE_EXTENSIONS)}")
+            failed += 1
             continue
         try:
             ranked = predict(model, class_names, load_image(path))
-        except ValueError as error:
+        except (OSError, ValueError, tf.errors.OpError) as error:
             print(f"  Error: {error}")
+            failed += 1
             continue
 
         label, confidence = ranked[0]
@@ -143,11 +181,14 @@ def main():
     if not results:
         sys.exit("\nNo image could be classified.")
 
-    if args.save:
-        RESULTS_DIR.mkdir(exist_ok=True)
-        with open(RESULTS_DIR / "unseen_predictions.json", "w", encoding="utf-8") as f:
+    if args.save or args.output:
+        output_path = args.output or RESULTS_DIR / "unseen_predictions.json"
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(output_path, "w", encoding="utf-8") as f:
             json.dump(results, f, indent=2)
-        print("\nSaved: results/unseen_predictions.json")
+        print(f"\nSaved: {output_path}")
+    if failed:
+        sys.exit(f"\n{failed} image(s) could not be classified.")
 
 
 if __name__ == "__main__":

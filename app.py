@@ -10,6 +10,7 @@ import streamlit as st
 sys.path.insert(0, str(Path(__file__).resolve().parent / "src"))
 
 from predict import LOW_CONFIDENCE, load_image, load_model_and_classes, predict  # noqa: E402
+from utils import INFERENCE_EXTENSIONS  # noqa: E402
 
 MAX_UPLOAD_MB = 10
 
@@ -24,7 +25,11 @@ def main():
     st.set_page_config(page_title="Smart Image Classifier", page_icon="🖼️")
 
     st.title("Smart Image Classifier")
-    st.write("Upload an image and the CNN will predict its category.")
+    st.write("Upload a photo of a waste item to estimate its material category.")
+    st.warning(
+        "This model only classifies waste. People, cars, animals, screenshots and "
+        "other unrelated subjects will still receive a waste label, even at high confidence."
+    )
 
     try:
         model, class_names = get_model()
@@ -37,9 +42,11 @@ def main():
 
     st.caption("Classes: " + ", ".join(class_names))
 
-    uploaded = st.file_uploader("Upload an Image", type=["jpg", "jpeg", "png"])
+    uploaded = st.file_uploader(
+        "Upload a waste photo", type=sorted(ext.lstrip(".") for ext in INFERENCE_EXTENSIONS)
+    )
     if uploaded is None:
-        st.info("Choose a .jpg, .jpeg or .png image to get started.")
+        st.info("Choose a JPEG, JFIF, PNG, WebP, BMP or TIFF photo (up to 10 MB).")
         return
 
     if uploaded.size > MAX_UPLOAD_MB * 1024 * 1024:
@@ -55,8 +62,12 @@ def main():
         st.error("This file could not be opened as an image.")
         return
 
-    with st.spinner("Classifying..."):
-        ranked = predict(model, class_names, image)
+    try:
+        with st.spinner("Classifying..."):
+            ranked = predict(model, class_names, image)
+    except Exception as error:
+        st.error(f"Could not classify this image: {error}")
+        return
     label, confidence = ranked[0]
 
     left, right = st.columns(2)
@@ -64,7 +75,7 @@ def main():
         st.subheader("Preview")
         st.image(image)
     with right:
-        st.subheader("Prediction")
+        st.subheader("Predicted waste category")
         st.markdown(f"## {label.capitalize()}")
         st.metric("Confidence", f"{confidence * 100:.2f}%")
         if confidence < LOW_CONFIDENCE:
@@ -87,4 +98,5 @@ def main():
     )
 
 
-main()
+if __name__ == "__main__":
+    main()

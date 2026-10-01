@@ -25,6 +25,9 @@ TEST_IMAGES_DIR = PROJECT_ROOT / "test_images"
 IMAGE_SIZE = (128, 128)
 BATCH_SIZE = 32
 VALID_EXTENSIONS = {".jpg", ".jpeg", ".png"}
+# Pillow handles these additional photo formats at inference time. Keep the
+# dataset extensions separate: Keras' directory loader does not index JFIF/WebP.
+INFERENCE_EXTENSIONS = VALID_EXTENSIONS | {".jfif", ".webp", ".bmp", ".tif", ".tiff"}
 
 # Split ratios: 70% train, 15% validation, 15% test
 TRAIN_RATIO = 0.70

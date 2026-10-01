@@ -31,8 +31,9 @@ def main():
     n = {k: sum(v.values()) for k, v in splits.items()}
 
     lines = ["## Results", ""]
-    lines += ["All numbers below were produced by running the scripts in this "
-              "repository. The test set was used only once, for final evaluation.", ""]
+    lines += ["These numbers come from the saved result files in this repository. "
+              "They are historical results, not a fresh evaluation. The source "
+              "dataset and its provenance must be restored to reproduce them.", ""]
 
     lines += ["### Dataset split", "",
               "| Split | Images |", "|---|---|",
@@ -49,7 +50,7 @@ def main():
               f"| Macro precision | {metrics['macro_precision']:.3f} |",
               f"| Macro recall | {metrics['macro_recall']:.3f} |",
               f"| Macro F1 | {metrics['macro_f1']:.3f} |",
-              f"| Training time | {training['training_time_seconds'] / 60:.1f} min (CPU) |",
+              f"| Recorded training time | {training['training_time_seconds'] / 60:.1f} min |",
               f"| Parameters | {training['total_parameters']:,} |", ""]
 
     lines += ["### Per-class performance", "",

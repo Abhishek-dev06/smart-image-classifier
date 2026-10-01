@@ -1,7 +1,9 @@
-tensorflow
-numpy
-matplotlib
-scikit-learn
-pillow
-opencv-python
-streamlit
+# Runtime versions used for verification; Python 3.11.
+tensorflow==2.21.0
+keras==3.15.1
+numpy==2.4.6
+matplotlib==3.11.2
+scikit-learn==1.9.1
+pillow==12.3.0
+pandas==3.0.6
+streamlit==1.64.0

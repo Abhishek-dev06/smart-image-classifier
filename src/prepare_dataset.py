@@ -39,6 +39,12 @@ def main():
     class_names = get_class_names(RAW_DIR)
     print(f"Found {len(class_names)} classes: {class_names}\n")
 
+    # Validate every class before removing a previously usable split.
+    images_by_class = {name: list_images(RAW_DIR / name) for name in class_names}
+    for name, images in images_by_class.items():
+        if len(images) < 10:
+            raise ValueError(f"Class '{name}' has too few images ({len(images)}).")
+
     # Remove old splits so runs are always clean (raw data is untouched)
     for folder in (TRAIN_DIR, VAL_DIR, TEST_DIR):
         if folder.exists():
@@ -48,9 +54,7 @@ def main():
     totals = {"train": 0, "validation": 0, "test": 0}
 
     for name in class_names:
-        images = list_images(RAW_DIR / name)
-        if len(images) < 10:
-            raise ValueError(f"Class '{name}' has too few images ({len(images)}).")
+        images = images_by_class[name]
 
         rng.shuffle(images)
         n_train = int(len(images) * TRAIN_RATIO)

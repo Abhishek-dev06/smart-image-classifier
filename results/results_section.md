@@ -1,6 +1,6 @@
 ## Results
 
-All numbers below were produced by running the scripts in this repository. The test set was used only once, for final evaluation.
+These numbers come from the saved result files in this repository. They are historical results, not a fresh evaluation. The source dataset and its provenance must be restored to reproduce them.
 
 ### Dataset split
 
@@ -21,7 +21,7 @@ All numbers below were produced by running the scripts in this repository. The t
 | Macro precision | 0.698 |
 | Macro recall | 0.679 |
 | Macro F1 | 0.676 |
-| Training time | 36.4 min (CPU) |
+| Recorded training time | 36.4 min |
 | Parameters | 110,534 |
 
 ### Per-class performance
