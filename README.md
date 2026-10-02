@@ -51,6 +51,25 @@ Open the local address printed by Streamlit, normally `http://localhost:8501`. U
 
 If PowerShell activation is unavailable, invoke `.\.venv\Scripts\python.exe` directly in place of `python`.
 
+## REST API Server
+
+Run the REST API server to open an API link for integrating with web, mobile (Flutter, React, Android, iOS), or microservices:
+
+```sh
+python api.py
+```
+
+- **API Base URL & Interactive Web Tester**: [http://localhost:5000/](http://localhost:5000/)
+- **Health Check**: `GET http://localhost:5000/api/health`
+- **Class List (12 Classes)**: `GET http://localhost:5000/api/classes`
+- **Model Specifications**: `GET http://localhost:5000/api/model`
+- **Prediction Endpoint**: `POST http://localhost:5000/api/predict` (Supports multipart `file` upload or JSON base64)
+
+Example cURL request:
+```sh
+curl -X POST -F "file=@test_images/class_car.jpg" http://localhost:5000/api/predict
+```
+
 ## Command-line predictions
 
 ```sh
