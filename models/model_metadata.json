@@ -1,0 +1,30 @@
+{
+  "model_name": "WasteWealth MobileNetV2",
+  "input_shape": [
+    224,
+    224,
+    3
+  ],
+  "number_of_classes": 12,
+  "class_names": [
+    "battery",
+    "biological",
+    "brown-glass",
+    "cardboard",
+    "clothes",
+    "green-glass",
+    "metal",
+    "paper",
+    "plastic",
+    "shoes",
+    "trash",
+    "white-glass"
+  ],
+  "input_color_format": "RGB",
+  "input_pixel_range": [
+    0,
+    255
+  ],
+  "preprocessing": "Rescaling layer is included in the model",
+  "output_activation": "softmax"
+}

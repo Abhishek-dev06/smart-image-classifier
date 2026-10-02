@@ -25,7 +25,7 @@ def test_every_bundled_photo_is_discovered_and_classified(classifier, filename):
     assert path in inference.collect_paths([])
     model, classes = classifier
     ranked = inference.predict(model, classes, inference.load_image(path))
-    assert len(ranked) == 6
+    assert len(ranked) == len(classes)
     assert {name for name, _ in ranked} == set(classes)
     values = [value for _, value in ranked]
     assert values == sorted(values, reverse=True)
@@ -81,7 +81,7 @@ def test_oversized_decoded_image_is_reported(monkeypatch):
 
 def test_preprocessing_keeps_raw_pixel_scale_for_model_normalization():
     batch = inference.preprocess(Image.new("L", (8, 12), 255))
-    assert batch.shape == (1, 128, 128, 3)
+    assert batch.shape == (1, 224, 224, 3)
     assert batch.dtype == np.float32
     np.testing.assert_allclose(batch, 255)
 

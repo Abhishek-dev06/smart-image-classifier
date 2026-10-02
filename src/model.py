@@ -8,13 +8,41 @@ from data_pipeline import build_augmentation, build_preprocessing
 from utils import IMAGE_SIZE, RESULTS_DIR, SEED, set_seed
 
 
-def build_model(num_classes, allow_horizontal_flip=True):
-    """Build and compile the baseline CNN.
+def build_mobilenet_v2_model(num_classes=12, allow_horizontal_flip=True, freeze_backbone=True):
+    """Build and compile the WasteWealth MobileNetV2 classifier.
 
-    Augmentation and normalization are part of the model, so predict.py and
-    the Streamlit app only need to resize the image. Augmentation layers are
-    active only during training.
+    Augmentation and normalization are part of the model.
     """
+    inputs = keras.Input(shape=(*IMAGE_SIZE, 3), name="image")
+
+    x = build_augmentation(allow_horizontal_flip)(inputs)
+    x = build_preprocessing()(x)
+
+    base_model = keras.applications.MobileNetV2(
+        input_shape=(*IMAGE_SIZE, 3),
+        include_top=False,
+        weights="imagenet" if freeze_backbone else None,
+    )
+    if freeze_backbone:
+        base_model.trainable = False
+
+    x = base_model(x, training=False)
+    x = layers.GlobalAveragePooling2D(name="avg_pool")(x)
+    x = layers.Dense(128, activation="relu", name="dense_features")(x)
+    x = layers.Dropout(0.3, seed=SEED, name="dropout")(x)
+    outputs = layers.Dense(num_classes, activation="softmax", name="predictions")(x)
+
+    model = keras.Model(inputs, outputs, name="WasteWealth_MobileNetV2")
+    model.compile(
+        optimizer=keras.optimizers.Adam(learning_rate=1e-3),
+        loss=keras.losses.SparseCategoricalCrossentropy(),
+        metrics=["accuracy"],
+    )
+    return model
+
+
+def build_baseline_cnn_model(num_classes=12, allow_horizontal_flip=True):
+    """Build and compile the baseline CNN."""
     inputs = keras.Input(shape=(*IMAGE_SIZE, 3), name="image")
 
     x = build_augmentation(allow_horizontal_flip)(inputs)
@@ -40,6 +68,16 @@ def build_model(num_classes, allow_horizontal_flip=True):
     return model
 
 
+def build_model(num_classes=12, allow_horizontal_flip=True, backbone="mobilenet_v2"):
+    """Build and compile the classifier.
+
+    Supports 'mobilenet_v2' (WasteWealth MobileNetV2, default) and 'baseline_cnn'.
+    """
+    if backbone == "baseline_cnn":
+        return build_baseline_cnn_model(num_classes, allow_horizontal_flip=allow_horizontal_flip)
+    return build_mobilenet_v2_model(num_classes, allow_horizontal_flip=allow_horizontal_flip)
+
+
 def count_parameters(model):
     trainable = sum(int(np.prod(w.shape)) for w in model.trainable_weights)
     non_trainable = sum(int(np.prod(w.shape)) for w in model.non_trainable_weights)
@@ -48,7 +86,7 @@ def count_parameters(model):
 
 def main():
     set_seed()
-    num_classes = 6  # change this if your dataset has a different class count
+    num_classes = 12  # WasteWealth MobileNetV2 12-class dataset
     model = build_model(num_classes)
     model.summary()
 

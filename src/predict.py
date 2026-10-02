@@ -20,13 +20,35 @@ import tensorflow as tf
 from PIL import Image, ImageOps, UnidentifiedImageError
 from tensorflow import keras
 
-from utils import (MODEL_PATH, CLASS_NAMES_PATH, RESULTS_DIR, TEST_IMAGES_DIR,
+from utils import (MODEL_PATH, CLASS_NAMES_PATH, MODEL_METADATA_PATH, RESULTS_DIR, TEST_IMAGES_DIR,
                    PROJECT_ROOT, IMAGE_SIZE, INFERENCE_EXTENSIONS)
 
 LOW_CONFIDENCE = 0.60
 
 
-def load_model_and_classes(model_path=MODEL_PATH, class_names_path=CLASS_NAMES_PATH):
+def load_metadata(metadata_path=MODEL_METADATA_PATH):
+    """Load model metadata if present."""
+    metadata_path = Path(metadata_path)
+    if metadata_path.is_file():
+        try:
+            with open(metadata_path, encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return None
+    return None
+
+
+def get_model_input_size(model):
+    """Extract (height, width) from model input shape if defined, otherwise IMAGE_SIZE."""
+    if hasattr(model, "input_shape") and model.input_shape and len(model.input_shape) == 4:
+        h, w = model.input_shape[1], model.input_shape[2]
+        if h and w:
+            return (int(h), int(w))
+    return IMAGE_SIZE
+
+
+def load_model_and_classes(model_path=MODEL_PATH, class_names_path=CLASS_NAMES_PATH,
+                           metadata_path=MODEL_METADATA_PATH):
     """Load the trained model and its class names."""
     model_path, class_names_path = Path(model_path), Path(class_names_path)
     if not model_path.is_file() or not class_names_path.is_file():
@@ -41,10 +63,17 @@ def load_model_and_classes(model_path=MODEL_PATH, class_names_path=CLASS_NAMES_P
         raise ValueError("class_names.json must contain a nonempty list of unique class names.")
     # Inference does not need saved optimizer state or training metrics.
     model = keras.models.load_model(model_path, compile=False)
-    if tuple(model.input_shape) != (None, *IMAGE_SIZE, 3):
-        raise ValueError(f"Model must accept RGB images of size {IMAGE_SIZE}.")
+    input_size = get_model_input_size(model)
+    if tuple(model.input_shape) != (None, *input_size, 3):
+        raise ValueError(f"Model must accept RGB images of size {input_size}.")
     if tuple(model.output_shape) != (None, len(class_names)):
-        raise ValueError("Model output count does not match class_names.json.")
+        metadata = load_metadata(metadata_path)
+        model_name = metadata.get("model_name", "WasteWealth MobileNetV2") if metadata else "WasteWealth MobileNetV2"
+        out_count = model.output_shape[-1] if model.output_shape else "unknown"
+        raise ValueError(
+            f"Model output count ({out_count}) does not match class_names.json ({len(class_names)}). "
+            f"Please place your trained {model_name} model in {model_path} or run training."
+        )
     return model, class_names
 
 
@@ -68,16 +97,19 @@ def load_image(source):
         raise ValueError(f"Could not read the image: {error}") from error
 
 
-def preprocess(img):
+def preprocess(img, target_size=None):
     """Resize like the training pipeline. Normalization happens inside the model."""
+    if target_size is None:
+        target_size = IMAGE_SIZE
     array = np.asarray(img.convert("RGB"), dtype="float32")  # values stay in 0-255
-    array = tf.image.resize(array, IMAGE_SIZE).numpy()   # bilinear, same as training loader
+    array = tf.image.resize(array, target_size).numpy()   # bilinear, same as training loader
     return np.expand_dims(array, axis=0)
 
 
 def predict(model, class_names, img):
     """Return [(class_name, probability), ...] sorted from most to least likely."""
-    output = np.asarray(model.predict(preprocess(img), verbose=0))
+    target_size = get_model_input_size(model)
+    output = np.asarray(model.predict(preprocess(img, target_size=target_size), verbose=0))
     if output.shape != (1, len(class_names)) or not class_names:
         raise ValueError("Model prediction shape does not match the class names.")
     probabilities = output[0]
@@ -134,7 +166,9 @@ def main():
     except (OSError, ValueError, TypeError) as error:
         sys.exit(f"Error: {error}")
 
-    print("Waste classifier only. Supported classes: " + ", ".join(class_names))
+    metadata = load_metadata()
+    model_name = metadata.get("model_name", "WasteWealth MobileNetV2") if metadata else "WasteWealth MobileNetV2"
+    print(f"{model_name}. Supported classes ({len(class_names)}): " + ", ".join(class_names))
     print("Other subjects still receive a waste label, even at high confidence.")
     results = []
     failed = 0

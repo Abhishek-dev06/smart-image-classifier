@@ -18,11 +18,12 @@ TEST_DIR = DATASET_DIR / "test"
 MODELS_DIR = PROJECT_ROOT / "models"
 MODEL_PATH = MODELS_DIR / "image_classifier.keras"
 CLASS_NAMES_PATH = MODELS_DIR / "class_names.json"
+MODEL_METADATA_PATH = MODELS_DIR / "model_metadata.json"
 RESULTS_DIR = PROJECT_ROOT / "results"
 TEST_IMAGES_DIR = PROJECT_ROOT / "test_images"
 
 # Image and training settings
-IMAGE_SIZE = (128, 128)
+IMAGE_SIZE = (224, 224)
 BATCH_SIZE = 32
 VALID_EXTENSIONS = {".jpg", ".jpeg", ".png"}
 # Pillow handles these additional photo formats at inference time. Keep the

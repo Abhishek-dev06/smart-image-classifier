@@ -9,7 +9,8 @@ import streamlit as st
 # app.py lives in the project root, the other modules live in src/
 sys.path.insert(0, str(Path(__file__).resolve().parent / "src"))
 
-from predict import LOW_CONFIDENCE, load_image, load_model_and_classes, predict  # noqa: E402
+from predict import (LOW_CONFIDENCE, load_image, load_model_and_classes,
+                     load_metadata, predict)  # noqa: E402
 from utils import INFERENCE_EXTENSIONS  # noqa: E402
 
 MAX_UPLOAD_MB = 10
@@ -22,9 +23,12 @@ def get_model():
 
 
 def main():
-    st.set_page_config(page_title="Smart Image Classifier", page_icon="🖼️")
+    metadata = load_metadata()
+    model_name = metadata.get("model_name", "WasteWealth MobileNetV2") if metadata else "WasteWealth MobileNetV2"
 
-    st.title("Smart Image Classifier")
+    st.set_page_config(page_title=f"{model_name} - Smart Image Classifier", page_icon="♻️")
+
+    st.title(f"♻️ {model_name}")
     st.write("Upload a photo of a waste item to estimate its material category.")
     st.warning(
         "This model only classifies waste. People, cars, animals, screenshots and "

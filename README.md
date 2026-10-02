@@ -1,10 +1,10 @@
-# Smart Image Classifier
+# Smart Image Classifier (WasteWealth MobileNetV2)
 
-A TensorFlow/Keras baseline for classifying **waste photos** into six material categories, with a Streamlit upload interface and a command-line prediction tool.
+A TensorFlow/Keras application for classifying **waste photos** into 12 material categories using the **WasteWealth MobileNetV2** architecture, with a Streamlit upload interface and a command-line prediction tool.
 
-**Categories:** `battery` · `glass` · `metal` · `organic` · `paper` · `plastic`
+**Categories (12):** `battery` · `biological` · `brown-glass` · `cardboard` · `clothes` · `green-glass` · `metal` · `paper` · `plastic` · `shoes` · `trash` · `white-glass`
 
-> This is a waste classifier, not a general object recognizer. Cars, people, animals, toys, and screenshots are outside its intended use. The model always chooses among its six categories and can be confidently wrong on unrelated photos.
+> This is a waste classifier, not a general object recognizer. Cars, people, animals, toys, and screenshots are outside its intended use. The model always chooses among its 12 categories and can be confidently wrong on unrelated photos.
 
 ## Features
 
@@ -116,11 +116,17 @@ For a new training run, arrange labeled JPEG or PNG files like this:
 ```text
 dataset/raw/
 ├── battery/
-├── glass/
+├── biological/
+├── brown-glass/
+├── cardboard/
+├── clothes/
+├── green-glass/
 ├── metal/
-├── organic/
 ├── paper/
-└── plastic/
+├── plastic/
+├── shoes/
+├── trash/
+└── white-glass/
 ```
 
 Each class needs at least 10 readable images. Dataset scripts accept `.jpg`, `.jpeg`, and `.png`. Convert other formats before training; additional upload formats are supported by Pillow at inference time, separately from Keras' training directory loader.
@@ -138,9 +144,9 @@ python src/generate_results_section.py
 
 `prepare_dataset.py` validates all classes before rebuilding the train, validation, and test directories. A successful run **replaces existing splits**. The raw dataset is retained. Splitting uses 70% training, 15% validation, and the remainder for testing, per class, with seed 42. Integer rounding explains the recorded split sizes.
 
-Training replaces the model and class-name files in `models/` and writes updated training results. Evaluation and analysis commands replace their respective result files. Back up artifacts before starting a new experiment. Keep `image_classifier.keras` and `class_names.json` from the same run, in the original label order.
+Training replaces the model and class-name files in `models/` and writes updated training results. Evaluation and analysis commands replace their respective result files. Back up artifacts before starting a new experiment. Keep `image_classifier.keras`, `class_names.json`, and `model_metadata.json` from the same run, in the original label order.
 
-Images become 128 × 128 RGB tensors. Pixel values remain in the 0–255 range before entering the model; its built-in `Rescaling(1/255)` layer normalizes them once. Training augmentation uses horizontal flips, rotation, and zoom. The network has three convolution/pooling blocks, global average pooling, a 128-unit dense layer, dropout, and a six-way softmax output.
+Images become 224 × 224 RGB tensors. Pixel values remain in the 0–255 range before entering the model; its built-in `Rescaling(1/255)` layer normalizes them once. Training augmentation uses horizontal flips, rotation, and zoom. The default network uses the **WasteWealth MobileNetV2** backbone with global average pooling, a 128-unit dense layer, dropout, and a 12-way softmax output.
 
 ## Verification
 

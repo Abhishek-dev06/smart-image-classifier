@@ -1,8 +1,14 @@
 [
   "battery",
-  "glass",
+  "biological",
+  "brown-glass",
+  "cardboard",
+  "clothes",
+  "green-glass",
   "metal",
-  "organic",
   "paper",
-  "plastic"
+  "plastic",
+  "shoes",
+  "trash",
+  "white-glass"
 ]
