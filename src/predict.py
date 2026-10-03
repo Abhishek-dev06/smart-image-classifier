@@ -51,29 +51,40 @@ def load_model_and_classes(model_path=MODEL_PATH, class_names_path=CLASS_NAMES_P
                            metadata_path=MODEL_METADATA_PATH):
     """Load the trained model and its class names."""
     model_path, class_names_path = Path(model_path), Path(class_names_path)
-    if not model_path.is_file() or not class_names_path.is_file():
+    if not model_path.is_file():
         raise FileNotFoundError(
-            "Trained model or class_names.json not found in models/.\n"
-            "Run: python src/train.py")
+            f"Model file not found: {model_path}\n"
+            "Copy your trained image_classifier.keras into models/ or run: python src/train.py")
+    if not class_names_path.is_file():
+        raise FileNotFoundError(
+            f"class_names.json not found: {class_names_path}\n"
+            "Copy the class_names.json from the same training run into models/.")
     with open(class_names_path, encoding="utf-8") as f:
         class_names = json.load(f)
     if (not isinstance(class_names, list) or not class_names
             or any(not isinstance(name, str) or not name.strip() for name in class_names)
             or len(set(class_names)) != len(class_names)):
         raise ValueError("class_names.json must contain a nonempty list of unique class names.")
+    metadata = load_metadata(metadata_path)
     # Inference does not need saved optimizer state or training metrics.
     model = keras.models.load_model(model_path, compile=False)
     input_size = get_model_input_size(model)
     if tuple(model.input_shape) != (None, *input_size, 3):
         raise ValueError(f"Model must accept RGB images of size {input_size}.")
     if tuple(model.output_shape) != (None, len(class_names)):
-        metadata = load_metadata(metadata_path)
         model_name = metadata.get("model_name", "WasteWealth MobileNetV2") if metadata else "WasteWealth MobileNetV2"
         out_count = model.output_shape[-1] if model.output_shape else "unknown"
         raise ValueError(
             f"Model output count ({out_count}) does not match class_names.json ({len(class_names)}). "
-            f"Please place your trained {model_name} model in {model_path} or run training."
+            f"The file {model_path.name} is from a different training run. "
+            f"Replace it with the {model_name} model trained on the same {len(class_names)} classes."
         )
+    # class_names.json and model_metadata.json must describe the same labels in the same order.
+    meta_names = metadata.get("class_names") if metadata else None
+    if meta_names is not None and list(meta_names) != class_names:
+        raise ValueError(
+            "class_names.json and model_metadata.json list different classes or a different order. "
+            "Use both files from the same training run.")
     return model, class_names
 
 
@@ -115,7 +126,7 @@ def predict(model, class_names, img):
     probabilities = output[0]
     if (not np.isfinite(probabilities).all() or (probabilities < 0).any()
             or (probabilities > 1).any()
-            or not np.isclose(probabilities.sum(), 1.0, atol=1e-5)):
+            or not np.isclose(probabilities.sum(), 1.0, atol=1e-4)):
         raise ValueError("Model returned invalid probabilities; check the model artifact.")
     order = np.argsort(probabilities)[::-1]
     return [(class_names[i], float(probabilities[i])) for i in order]

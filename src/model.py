@@ -1,4 +1,4 @@
-"""Baseline CNN for Smart Image Classifier."""
+"""Model definitions (WasteWealth MobileNetV2 and baseline CNN) for Smart Image Classifier."""
 
 import numpy as np
 from tensorflow import keras
@@ -8,10 +8,12 @@ from data_pipeline import build_augmentation, build_preprocessing
 from utils import IMAGE_SIZE, RESULTS_DIR, SEED, set_seed
 
 
-def build_mobilenet_v2_model(num_classes=12, allow_horizontal_flip=True, freeze_backbone=True):
+def build_mobilenet_v2_model(num_classes=12, allow_horizontal_flip=True,
+                             freeze_backbone=True, pretrained=True):
     """Build and compile the WasteWealth MobileNetV2 classifier.
 
     Augmentation and normalization are part of the model.
+    pretrained=False skips the ImageNet weight download (useful for offline tests).
     """
     inputs = keras.Input(shape=(*IMAGE_SIZE, 3), name="image")
 
@@ -21,7 +23,7 @@ def build_mobilenet_v2_model(num_classes=12, allow_horizontal_flip=True, freeze_
     base_model = keras.applications.MobileNetV2(
         input_shape=(*IMAGE_SIZE, 3),
         include_top=False,
-        weights="imagenet" if freeze_backbone else None,
+        weights="imagenet" if pretrained else None,
     )
     if freeze_backbone:
         base_model.trainable = False

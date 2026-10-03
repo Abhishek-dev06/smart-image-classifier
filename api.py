@@ -14,10 +14,10 @@ from flask_cors import CORS
 # Project imports
 sys.path.insert(0, str(Path(__file__).resolve().parent / "src"))
 
-from utils import (CLASS_NAMES_PATH, INFERENCE_EXTENSIONS, MODEL_METADATA_PATH,
-                   MODEL_PATH)
+from utils import CLASS_NAMES_PATH, MODEL_METADATA_PATH, MODEL_PATH
 
 app = Flask(__name__)
+app.config["MAX_CONTENT_LENGTH"] = 10 * 1024 * 1024  # same 10 MB limit as the Streamlit app
 CORS(app)  # Enable Cross-Origin Resource Sharing for Flutter, Web, Android, etc.
 
 # Lazy-loaded model and classes
@@ -151,6 +151,11 @@ HTML_TESTER = """<!DOCTYPE html>
 </html>"""
 
 
+@app.errorhandler(413)
+def too_large(_error):
+    return jsonify({"success": False, "error": "File too large. Maximum size is 10 MB."}), 413
+
+
 @app.route("/", methods=["GET"])
 def home():
     """Home route providing interactive API UI and documentation."""
@@ -208,9 +213,9 @@ def predict_endpoint():
         image_source = request.files["file"]
     elif "image" in request.files and request.files["image"].filename:
         image_source = request.files["image"]
-    elif request.is_json and "image_base64" in request.json:
+    elif request.is_json and "image_base64" in (request.get_json(silent=True) or {}):
         try:
-            b64_data = request.json["image_base64"]
+            b64_data = request.get_json(silent=True)["image_base64"]
             if "," in b64_data:
                 b64_data = b64_data.split(",", 1)[1]
             image_bytes = base64.b64decode(b64_data)

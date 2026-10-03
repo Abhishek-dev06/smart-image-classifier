@@ -90,7 +90,7 @@ def main():
     normalized = matrix / np.maximum(row_sums, 1)   # each row = recall per class
 
     # Two panels: raw counts and row-normalized percentages
-    size = max(7, len(class_names) * 1.3)
+    size = max(7, len(class_names) * 0.9)
     fig, axes = plt.subplots(1, 2, figsize=(size * 2, size))
     draw_matrix(axes[0], matrix, class_names, "Confusion Matrix (counts)", "d")
     draw_matrix(axes[1], normalized, class_names,

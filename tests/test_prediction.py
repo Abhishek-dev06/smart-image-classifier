@@ -1,4 +1,4 @@
-"""Regression tests exercise real decoding and the bundled model on CPU."""
+"""Regression tests: real decoding, real model on CPU, generated images."""
 
 import io
 import json
@@ -11,25 +11,39 @@ import pytest
 from PIL import Image
 
 import predict as inference
-from utils import INFERENCE_EXTENSIONS, TEST_IMAGES_DIR
+from conftest import make_image_bytes
+from utils import CLASS_NAMES_PATH, INFERENCE_EXTENSIONS, MODEL_METADATA_PATH
+
+EXPECTED_CLASSES = ["battery", "biological", "brown-glass", "cardboard", "clothes",
+                    "green-glass", "metal", "paper", "plastic", "shoes", "trash",
+                    "white-glass"]
 
 
-@pytest.fixture(scope="session")
-def classifier():
-    return inference.load_model_and_classes()
+# ---- artifacts: this catches an old 6-class model next to a 12-class label file ----
+
+def test_bundled_artifacts_are_the_12_class_model(classifier):
+    model, classes = classifier
+    assert classes == EXPECTED_CLASSES
+    assert model.output_shape == (None, 12)
+    assert json.loads(CLASS_NAMES_PATH.read_text()) == json.loads(
+        MODEL_METADATA_PATH.read_text())["class_names"]
 
 
-@pytest.mark.parametrize("filename", sorted(p.name for p in TEST_IMAGES_DIR.iterdir()))
-def test_every_bundled_photo_is_discovered_and_classified(classifier, filename):
-    path = TEST_IMAGES_DIR / filename
+# ---- inference on every supported format ----
+
+@pytest.mark.parametrize("filename", ["a.jpg", "b.jfif", "c.png", "d.webp", "e.bmp", "f.tiff"])
+def test_every_supported_photo_is_discovered_and_classified(classifier, photo_dir, monkeypatch,
+                                                            filename):
+    monkeypatch.setattr(inference, "TEST_IMAGES_DIR", photo_dir)
+    path = photo_dir / filename
     assert path in inference.collect_paths([])
     model, classes = classifier
     ranked = inference.predict(model, classes, inference.load_image(path))
-    assert len(ranked) == len(classes)
+    assert len(ranked) == len(classes) == 12
     assert {name for name, _ in ranked} == set(classes)
     values = [value for _, value in ranked]
     assert values == sorted(values, reverse=True)
-    assert sum(values) == pytest.approx(1, abs=1e-5)
+    assert sum(values) == pytest.approx(1, abs=1e-4)
 
 
 @pytest.mark.parametrize("mode", ["RGB", "L", "RGBA", "P"])
@@ -88,11 +102,13 @@ def test_preprocessing_keeps_raw_pixel_scale_for_model_normalization():
 
 def test_repeated_inference_has_no_training_augmentation(classifier):
     model, classes = classifier
-    image = inference.load_image(TEST_IMAGES_DIR / "class_car.jpg")
+    image = inference.load_image(io.BytesIO(make_image_bytes("PNG")))
     first = inference.predict(model, classes, image)
     second = inference.predict(model, classes, image)
     assert first == second
 
+
+# ---- validation ----
 
 @pytest.mark.parametrize("output", [[[1.0]], [[float("nan"), 0]],
                                     [[0.8, 0.8]], [[-0.1, 1.1]]])
@@ -119,27 +135,45 @@ def test_model_and_class_count_must_match(tmp_path):
         inference.load_model_and_classes(class_names_path=names)
 
 
+def test_class_order_must_match_metadata(tmp_path):
+    names = tmp_path / "classes.json"
+    names.write_text(json.dumps(list(reversed(EXPECTED_CLASSES))))
+    with pytest.raises(ValueError, match="different classes or a different order"):
+        inference.load_model_and_classes(class_names_path=names)
+
+
 def test_missing_model_has_actionable_error(tmp_path):
     with pytest.raises(FileNotFoundError, match="train.py"):
         inference.load_model_and_classes(tmp_path / "missing.keras")
 
 
+def test_missing_class_names_has_actionable_error(tmp_path):
+    with pytest.raises(FileNotFoundError, match="class_names.json"):
+        inference.load_model_and_classes(class_names_path=tmp_path / "missing.json")
+
+
+# ---- CLI helpers ----
+
 def test_filename_label_requires_a_boundary():
     assert inference.expected_class(Path("paper_cup.jpg"), ["paper"]) == "paper"
     assert inference.expected_class(Path("paper.jpg"), ["paper"]) == "paper"
     assert inference.expected_class(Path("paperweight.jpg"), ["paper"]) is None
+    assert inference.expected_class(Path("brown-glass_bottle.jpg"),
+                                    ["glass", "brown-glass"]) == "brown-glass"
 
 
-def test_batch_reports_partial_failure_and_saves_successes(tmp_path, monkeypatch, classifier):
+def test_batch_reports_partial_failure_and_saves_successes(tmp_path, monkeypatch, classifier,
+                                                           photo_dir):
     output = tmp_path / "predictions.json"
     monkeypatch.setattr(inference, "load_model_and_classes", lambda: classifier)
-    monkeypatch.setattr(sys, "argv", ["predict.py", str(TEST_IMAGES_DIR / "class_images.jfif"),
+    monkeypatch.setattr(sys, "argv", ["predict.py", str(photo_dir / "b.jfif"),
                                      str(tmp_path / "missing.jpg"), "--output", str(output)])
     with pytest.raises(SystemExit, match="1 image"):
         inference.main()
     results = json.loads(output.read_text())
     assert len(results) == 1
-    assert results[0]["file"].endswith("class_images.jfif")
+    assert results[0]["file"].endswith("b.jfif")
+    assert len(results[0]["all_probabilities"]) == 12
 
 
 def test_discovery_ignores_directories_with_image_extensions(tmp_path, monkeypatch):

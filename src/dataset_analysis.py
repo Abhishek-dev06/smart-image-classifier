@@ -124,7 +124,7 @@ def main():
         "verdict": verdict,
         "splits": split_summary,
     }
-    with open(RESULTS_DIR / "dataset_summary.json", "w") as f:
+    with open(RESULTS_DIR / "dataset_summary.json", "w", encoding="utf-8") as f:
         json.dump(summary, f, indent=2)
 
     print("\nSaved: results/class_distribution.png")
