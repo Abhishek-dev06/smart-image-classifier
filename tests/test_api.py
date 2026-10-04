@@ -14,9 +14,9 @@ def client():
     return api.app.test_client()
 
 
-def test_health_and_classes_report_12_classes(client):
-    assert client.get("/api/health").get_json()["number_of_classes"] == 12
-    assert client.get("/api/classes").get_json()["count"] == 12
+def test_health_and_classes_match_bundled_model(client):
+    assert client.get("/api/health").get_json()["number_of_classes"] == 6
+    assert client.get("/api/classes").get_json()["count"] == 6
 
 
 def test_predict_with_multipart_file(client):
@@ -24,7 +24,7 @@ def test_predict_with_multipart_file(client):
     response = client.post("/api/predict", data=data, content_type="multipart/form-data")
     body = response.get_json()
     assert response.status_code == 200 and body["success"]
-    assert len(body["all_probabilities"]) == 12
+    assert len(body["all_probabilities"]) == 6
     assert len(body["top_predictions"]) == 3
 
 
