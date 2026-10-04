@@ -1,24 +1,18 @@
 {
-  "model_name": "WasteWealth MobileNetV2",
+  "model_name": "Smart Image Classifier Baseline CNN",
   "input_shape": [
-    224,
-    224,
+    128,
+    128,
     3
   ],
-  "number_of_classes": 12,
+  "number_of_classes": 6,
   "class_names": [
     "battery",
-    "biological",
-    "brown-glass",
-    "cardboard",
-    "clothes",
-    "green-glass",
+    "glass",
     "metal",
+    "organic",
     "paper",
-    "plastic",
-    "shoes",
-    "trash",
-    "white-glass"
+    "plastic"
   ],
   "input_color_format": "RGB",
   "input_pixel_range": [
@@ -26,5 +20,6 @@
     255
   ],
   "preprocessing": "Rescaling layer is included in the model",
-  "output_activation": "softmax"
+  "output_activation": "softmax",
+  "artifact_status": "Bundled model is the original 6-class model. Train and replace all model artifacts together for the 12-class WasteWealth upgrade."
 }
