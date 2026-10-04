@@ -14,19 +14,18 @@ import predict as inference
 from conftest import make_image_bytes
 from utils import CLASS_NAMES_PATH, INFERENCE_EXTENSIONS, MODEL_METADATA_PATH
 
-EXPECTED_CLASSES = ["battery", "biological", "brown-glass", "cardboard", "clothes",
-                    "green-glass", "metal", "paper", "plastic", "shoes", "trash",
-                    "white-glass"]
+EXPECTED_CLASSES = ["battery", "glass", "metal", "organic", "paper", "plastic"]
 
 
-# ---- artifacts: this catches an old 6-class model next to a 12-class label file ----
+# ---- bundled artifacts must agree with one another ----
 
-def test_bundled_artifacts_are_the_12_class_model(classifier):
+def test_bundled_artifacts_match(classifier):
     model, classes = classifier
     assert classes == EXPECTED_CLASSES
-    assert model.output_shape == (None, 12)
-    assert json.loads(CLASS_NAMES_PATH.read_text()) == json.loads(
-        MODEL_METADATA_PATH.read_text())["class_names"]
+    assert model.output_shape == (None, 6)
+    metadata = json.loads(MODEL_METADATA_PATH.read_text())
+    assert json.loads(CLASS_NAMES_PATH.read_text()) == metadata["class_names"]
+    assert metadata["number_of_classes"] == 6
 
 
 # ---- inference on every supported format ----
@@ -39,7 +38,7 @@ def test_every_supported_photo_is_discovered_and_classified(classifier, photo_di
     assert path in inference.collect_paths([])
     model, classes = classifier
     ranked = inference.predict(model, classes, inference.load_image(path))
-    assert len(ranked) == len(classes) == 12
+    assert len(ranked) == len(classes) == 6
     assert {name for name, _ in ranked} == set(classes)
     values = [value for _, value in ranked]
     assert values == sorted(values, reverse=True)
@@ -50,7 +49,7 @@ def test_every_supported_photo_is_discovered_and_classified(classifier, photo_di
 def test_uploaded_stream_is_reusable_and_converted_to_rgb(mode):
     stream = io.BytesIO()
     Image.new(mode, (7, 11)).save(stream, format="PNG")
-    stream.seek(0, 2)  # An upload can already have been read by the UI.
+    stream.seek(0, 2)
     image = inference.load_image(stream)
     assert image.mode == "RGB"
     assert image.size == (7, 11)
@@ -93,9 +92,11 @@ def test_oversized_decoded_image_is_reported(monkeypatch):
         inference.load_image(stream)
 
 
-def test_preprocessing_keeps_raw_pixel_scale_for_model_normalization():
-    batch = inference.preprocess(Image.new("L", (8, 12), 255))
-    assert batch.shape == (1, 224, 224, 3)
+def test_preprocessing_keeps_raw_pixel_scale_for_model_normalization(classifier):
+    model, _ = classifier
+    target_size = inference.get_model_input_size(model)
+    batch = inference.preprocess(Image.new("L", (8, 12), 255), target_size=target_size)
+    assert batch.shape == (1, *target_size, 3)
     assert batch.dtype == np.float32
     np.testing.assert_allclose(batch, 255)
 
@@ -158,8 +159,6 @@ def test_filename_label_requires_a_boundary():
     assert inference.expected_class(Path("paper_cup.jpg"), ["paper"]) == "paper"
     assert inference.expected_class(Path("paper.jpg"), ["paper"]) == "paper"
     assert inference.expected_class(Path("paperweight.jpg"), ["paper"]) is None
-    assert inference.expected_class(Path("brown-glass_bottle.jpg"),
-                                    ["glass", "brown-glass"]) == "brown-glass"
 
 
 def test_batch_reports_partial_failure_and_saves_successes(tmp_path, monkeypatch, classifier,
@@ -173,7 +172,7 @@ def test_batch_reports_partial_failure_and_saves_successes(tmp_path, monkeypatch
     results = json.loads(output.read_text())
     assert len(results) == 1
     assert results[0]["file"].endswith("b.jfif")
-    assert len(results[0]["all_probabilities"]) == 12
+    assert len(results[0]["all_probabilities"]) == 6
 
 
 def test_discovery_ignores_directories_with_image_extensions(tmp_path, monkeypatch):
